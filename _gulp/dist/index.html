@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Главная - siteName</title>
+        <title>Главная - Sunday Rock online</title>
         <meta name="description" content="">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -18,33 +18,48 @@
         <!-- Header-->
         <header class="header">
             <div class="container">
-                <nav class="navigation" role="navigation">
-                    <ul>
-                        <li class="active"><a href="#" title="Главная">Главная</a></li>
-                        <li><a href="#" title="О нас">О нас</a></li>
-                        <li><a href="#" title="Продукция">Продукция</a></li>
-                        <li><a href="#" title="Сотрудничество">Сотрудничество</a></li>
-                        <li><a href="#" title="Наши магазины">Наши магазины</a></li>
-                        <li><a href="#" title="Контакты">Контакты</a></li>
-                    </ul>
-                </nav>
+                <div class="header__wrapper">
+                    <div class="logo header__logo"><img src="./images/logo.png" alt=""></div>
+                    <button class="header__btn" type="button">Войти</button>
+                </div>
             </div>
         </header>
+        <!-- Content-->
         <div class="content">
-            <div class="container">
-                <h1>Главная 22</h1>
-                <div class="row">
-                    <div class="col-md-4">4 collumns</div>
-                    <div class="col-md-8">8 collumns</div>
-                    <div class="col-md-12">12 collumns</div>
-                    <div class="col-md-12">12 collumns</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <button class="btn btn-primary" type="button">Button</button>
-                        <button class="btn btn-danger" type="button">Button</button>
-                        <button class="btn btn-custom-color" type="button">Button</button>
-                        <button class="btn btn-custom-color2" type="button">Button</button>
+            <!-- Main section-->
+            <div class="section main-section">
+                <div class="container">
+                    <div class="main-section__head">
+                        <h1>Онлайн-школа вокала</h1>
+                        <div class="main-section__untitle">Учитесь петь красиво <strong>где удобно и когда удобно!</strong></div>
+                    </div>
+                    <div class="main-section__wrapper">
+                        <div class="main-section__img"><img src="./images/img-girl.png" alt=""></div>
+                        <div class="main-section__form">
+                            <form action="">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <input type="text" name="name" placeholder="Введите имя">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="phone" placeholder="Введите телефон">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" placeholder="Введите электронную почту">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-checkbox">
+                                            <input type="checkbox" name="checkbox1"><span>Заниматься будет ребёнок</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="age" placeholder="Введите возраст ребенка">
+                                    </div>
+                                </fieldset>
+                                <button class="btn" type="submit">Хочу петь!</button>
+                                <div class="form-info">Оставляя заявку, вы принимаете условия соглашения</div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

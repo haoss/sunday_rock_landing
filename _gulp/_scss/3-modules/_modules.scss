@@ -1,1 +1,40 @@
 /* modules */
+.main-section {
+  background: #ae0101 url('../images/bg-main-section.png') bottom center no-repeat;
+  mask: url('../images/bg-main-section.png');
+  mask-position: bottom center;
+  color: $color-white;
+  min-height: 990px;
+  padding-top: 145px;
+  &__head {
+    text-align: center;
+    .h1, h1 {
+      color: $color-white;
+    }
+  }
+  &__untitle {
+    font-weight: 500;
+    font-size: rem(32px);
+    margin-bottom: 30px;
+    strong {
+      color: #ffe534;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  &__form {
+    width: 434px;
+    min-height: 617px;
+    background: #ffe745;
+    border-radius: 35px;
+    padding: 35px 55px 20px 50px;
+    order: 1;
+    box-shadow: -7px -7px 0 #ffa21e;
+  }
+  &__img {
+    order: 2;
+    padding-left: 19px;
+  }
+}

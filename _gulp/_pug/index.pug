@@ -3,7 +3,7 @@ doctype
 html(lang="ru")
 
   -var active = 'Главная' //активный пункт меню, список в header.jade
-  -var pageTitle = 'Главная' + ' - siteName' //title страницы для генерации верстки
+  -var pageTitle = 'Главная' + ' - Sunday Rock online' //title страницы для генерации верстки
 
   include ./_include/_head
 
@@ -14,24 +14,39 @@ html(lang="ru")
 
     include ./_include/_header
 
+    // Content
     .content
-      .container
+      
+      // Main section
+      .section.main-section
+        .container
+          
+          .main-section__head
+            h1 Онлайн-школа вокала
+            .main-section__untitle Учитесь петь красиво 
+              strong где удобно и когда удобно!
 
-        h1 Главная 22
-
-        .row
-          .col-md-4 4 collumns
-          .col-md-8 8 collumns
-          .col-md-12 12 collumns
-          .col-md-12 12 collumns
-
-        .row
-          .col-md-12
-
-            button.btn.btn-primary(type="button") Button
-            button.btn.btn-danger(type="button") Button
-            button.btn.btn-custom-color(type="button") Button
-            button.btn.btn-custom-color2(type="button") Button
+          .main-section__wrapper
+            .main-section__img
+              img(src="./images/img-girl.png", alt="")
+            .main-section__form
+              form(action="")
+                fieldset
+                  .form-group
+                    input(type="text" name="name" placeholder="Введите имя")
+                  .form-group
+                    input(type="text" name="phone" placeholder="Введите телефон")
+                  .form-group
+                    input(type="email" name="email" placeholder="Введите электронную почту")
+                  .form-group
+                    label.form-checkbox
+                      input(type="checkbox" name="checkbox1")
+                      span Заниматься будет ребёнок
+                  .form-group
+                    input(type="text" name="age" placeholder="Введите возраст ребенка")
+                button(type="submit").btn Хочу петь!
+                .form-info Оставляя заявку, вы принимаете условия соглашения
+        
 
 
     include ./_include/_footer

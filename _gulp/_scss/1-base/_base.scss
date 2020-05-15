@@ -19,8 +19,8 @@ html, body {
 body {
   // background-color: alpha(var(--color-primary), 1);
   background: $color-white;
-  font-size: rem(16px);
-  font-family: $primary-font;
+  font-size: rem(17px);
+  font-family: $font-montserrat;
   color: $primary-color;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -34,13 +34,14 @@ body {
   margin: 0 0 15px 0;
 }
 .h1, h1 {
-  font-size: rem(21px);
+  font-size: rem(76px);
   line-height: 1.05;
   letter-spacing: -1px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
+  font-weight: 800;
 }
 .h2, h2 {
-  font-size: rem(18px);
+  font-size: rem(45px);
   line-height: 1.14;
   margin-bottom: 20px;
 }
@@ -74,7 +75,7 @@ em, i, .em, .i {
 }
 
 strong, b, .strong, .b {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 hr {
@@ -185,7 +186,7 @@ img, .img {
 
 /* section */
 .section {
-  padding: 50px 0;
+  padding: 0;
   min-width: 320px;
 }
 
