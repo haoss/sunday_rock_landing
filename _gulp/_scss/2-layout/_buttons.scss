@@ -8,5 +8,28 @@ button {
 }
 
 .btn {
-  
+  display: inline-block;
+  height: 63px;
+  text-decoration: none;
+  border-radius: 35px;
+  color: $color-white;
+  text-align: center;
+  padding: 0 25px;
+  background: linear-gradient(to bottom, #ff1818, #ca0000);
+  margin-bottom: 18px;
+  font-weight: 500;
+  font-size: rem(25px);
+  box-shadow: 0 0 0 rgba($color-black,.1);
+  transition: all 0.35s;
+  &:hover {
+    text-decoration: none;
+    box-shadow: 0 0 25px rgba($color-black,.6);
+  }
+  &:focus, &:active {
+    outline: none;
+  }
+  &--block {
+    display: block;
+    width: 100%;
+  }
 }

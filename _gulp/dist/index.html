@@ -5,7 +5,7 @@
         <title>Главная - Sunday Rock online</title>
         <meta name="description" content="">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="format-detection" content="telephone=no">
         <meta name="format-detection" content="date=no">
         <meta name="format-detection" content="address=no">
@@ -14,63 +14,83 @@
         <link rel="stylesheet" href="./css/style.min.css">
     </head>
     <body>
-        <!-- Preloader-->
-        <!-- Header-->
-        <header class="header">
-            <div class="container">
-                <div class="header__wrapper">
-                    <div class="logo header__logo"><img src="./images/logo.png" alt=""></div>
-                    <button class="header__btn" type="button">Войти</button>
-                </div>
-            </div>
-        </header>
-        <!-- Content-->
-        <div class="content">
-            <!-- Main section-->
-            <div class="section main-section">
+        <div class="base">
+            <!-- Preloader-->
+            <!-- Header-->
+            <header class="header">
                 <div class="container">
-                    <div class="main-section__head">
-                        <h1>Онлайн-школа вокала</h1>
-                        <div class="main-section__untitle">Учитесь петь красиво <strong>где удобно и когда удобно!</strong></div>
+                    <div class="header__wrapper">
+                        <div class="logo header__logo"><img src="./images/logo.png" alt=""></div>
+                        <button class="header__btn" type="button">Войти</button>
                     </div>
-                    <div class="main-section__wrapper">
-                        <div class="main-section__img"><img src="./images/img-girl.png" alt=""></div>
-                        <div class="main-section__form">
-                            <form action="">
-                                <fieldset>
-                                    <div class="form-group">
-                                        <input type="text" name="name" placeholder="Введите имя">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="phone" placeholder="Введите телефон">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" name="email" placeholder="Введите электронную почту">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-checkbox">
-                                            <input type="checkbox" name="checkbox1"><span>Заниматься будет ребёнок</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="age" placeholder="Введите возраст ребенка">
-                                    </div>
-                                </fieldset>
-                                <button class="btn" type="submit">Хочу петь!</button>
-                                <div class="form-info">Оставляя заявку, вы принимаете условия соглашения</div>
-                            </form>
+                </div>
+            </header>
+            <!-- Content-->
+            <main class="content">
+                <!-- Bg-top-->
+                <div class="container">
+                    <div class="bg-img">
+                        <div class="bg-img__wrapper"><img class="bg-img__img bg-img__img--top-left" src="./images/img-block1-left.png" alt=""><img class="bg-img__img bg-img__img--top-right" src="./images/img-block1-right.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- Main section-->
+                <div class="section main-section">
+                    <div class="container">
+                        <div class="main-section__head">
+                            <h1>Онлайн-школа вокала</h1>
+                            <div class="main-section__untitle">Учитесь петь красиво <strong>где удобно и когда удобно!</strong></div>
+                        </div>
+                        <div class="main-section__wrapper">
+                            <div class="bg-img">
+                                <div class="bg-img__wrapper"><img class="bg-img__img bg-img__img--ms1" src="./images/img-main-section-1.png" alt=""><img class="bg-img__img bg-img__img--ms2" src="./images/img-main-section-2.png" alt=""></div>
+                            </div>
+                            <div class="main-section__img"><img class="main-section__img-1" src="./images/img-girl-bg.png" alt=""><img class="main-section__img-2" src="./images/img-girl.png" alt=""></div>
+                            <div class="main-section__form">
+                                <div class="main-section__form-content">
+                                    <div class="main-section__form-head">Индивидуальный урок вокала за <strong>1 руб.</strong></div>
+                                    <ul>
+                                        <li>Оставляете заявку</li>
+                                        <li>Выбираете время урока</li>
+                                        <li>Оплачиваете 1 руб.</li>
+                                        <li>Поёте и радуетесь!</li>
+                                    </ul>
+                                </div>
+                                <form action="" autocomplete="off">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="name" placeholder="Введите имя">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="phone" placeholder="Введите телефон">
+                                        </div>
+                                        <div class="form-group form-group--mb21">
+                                            <input class="form-control" type="email" name="email" placeholder="Введите электронную почту">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="label-checkbox">
+                                                <input type="checkbox" name="checkbox1"><span class="label-checkbox__input"></span><span class="label-checkbox__label"><b>Заниматься будет ребёнок</b></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group form-group--mb21">
+                                            <input class="form-control" type="text" name="age" placeholder="Введите возраст ребенка">
+                                        </div>
+                                    </fieldset>
+                                    <button class="btn btn--block" type="submit">Хочу петь!</button>
+                                    <div class="form-info text-center">Оставляя заявку, вы принимаете <a href="#!" target="_blank">условия соглашения</a></div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
+            <!-- Footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div>&copy; 2018</div>
+                </div>
+            </footer>
+            <div style="height: 1000px; background-color: #000"></div>
         </div>
-        <!-- Footer-->
-        <footer class="footer">
-            <div class="container">
-                <div>&copy; 2018</div>
-            </div>
-        </footer>
-        <div style="height: 1000px; background-color: #000"></div>
         <!-- Load Scripts-->
         <!-- Footer js-->
         <script src="./js/libs/jquery/jquery-3.3.1.min.js"></script>

@@ -4,8 +4,10 @@
   mask: url('../images/bg-main-section.png');
   mask-position: bottom center;
   color: $color-white;
-  min-height: 990px;
+  // min-height: 990px;
   padding-top: 145px;
+  height: 990px;
+  @include clearfix;
   &__head {
     text-align: center;
     .h1, h1 {
@@ -22,7 +24,8 @@
   }
   &__wrapper {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+    padding-left: 116px;
   }
   &__form {
     width: 434px;
@@ -32,9 +35,80 @@
     padding: 35px 55px 20px 50px;
     order: 1;
     box-shadow: -7px -7px 0 #ffa21e;
+    color: $primary-color;
+    &-content {
+      font-size: rem(18px);
+      font-weight: 500;
+      ul {
+        padding-left: 18px;
+        margin: 0;
+        padding-bottom: 30px;
+        li {
+          line-height: 1.2;
+          &+li {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+    &-head {
+      font-weight: 900;
+      font-size: rem(25px);
+      line-height: 1;
+      margin-bottom: 25px;
+      strong {
+        font-size: rem(35px);
+        font-weight: 900;
+      }
+    }
   }
   &__img {
     order: 2;
     padding-left: 19px;
+    position: relative;
+  }
+  &__img-1 {
+    position: absolute;
+    bottom: 5px;
+    margin-left: 190px;
+  }
+  &__img-2 {
+    position: absolute;
+    bottom: -45px;
+  }
+}
+
+.bg-img {
+  position: relative;
+  height: 0;
+  z-index: 5;
+  &__wrapper {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  &__img {
+    top: 0;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    &--top-left {
+      transform: translateX(calc(-100% - 35px));
+      margin-top: -75px;
+    }
+    &--top-right {
+      left: 100%;
+      transform: translateX(20px);
+      margin-top: 0px;
+    }
+    &--ms1 {
+      margin-left: -122px;
+      margin-top: 22px;
+    }
+    &--ms2 {
+      margin-left: -500px;
+      margin-top: 90px;
+    }
   }
 }
