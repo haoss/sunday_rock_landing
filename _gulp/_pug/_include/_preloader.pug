@@ -3,3 +3,35 @@
 //-     div
 //-     div
 //-     div
+
+mixin formOnce
+  .form-once
+    .form-once__wrapper
+      form(action="#!")
+        .form-once__head Индивидуальный урок вокала за 
+          strong 1 руб.
+        fieldset
+          .form-once__row1
+            .div1
+              .form-group
+                input(type="text" name="name" placeholder="Введите имя").form-control
+            .div2
+              .form-group
+                input(type="text" name="phone" placeholder="Введите телефон").form-control
+            .div3
+              .form-group
+                input(type="email" name="email" placeholder="Введите электронную почту").form-control
+          .form-once__row2
+            .div1
+              .form-group
+                input(type="text" name="age" placeholder="Введите возраст ребенка").form-control
+              .form-group
+                label.label-checkbox
+                  input(type="checkbox" name="checkbox1")
+                  span.label-checkbox__input
+                  span.label-checkbox__label
+                    b Заниматься будет ребёнок
+            .div2
+              button(type="submit").btn.btn--yellow.btn--block Хочу петь!
+              .form-info.text-center Оставляя заявку, вы принимаете 
+                a(href="#!" target="_blank") условия соглашения

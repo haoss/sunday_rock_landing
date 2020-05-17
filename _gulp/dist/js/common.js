@@ -174,9 +174,9 @@ function headerScroll() {
 }
 
 function wordWrap() {
-  var words = $("p").text().split(" ");
-  $("p").empty();
+  var words = $(".video__content p").text().split(" ");
+  $(".video__content p").empty();
   $.each(words, function(i, v) {
-      $("p").append($("<span>").text(v));
+    $(".video__content p").append($("<span>").text(v));
   });
 }
