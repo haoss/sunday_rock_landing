@@ -73,6 +73,7 @@ $(document).on('ready', function(){
   });
 
   headerScroll();
+  wordWrap();
 
   // Chrome Smooth Scroll
   try {
@@ -170,4 +171,12 @@ function headerScroll() {
   } else {
     header.removeClass('is-scroll');
   }
+}
+
+function wordWrap() {
+  var words = $("p").text().split(" ");
+  $("p").empty();
+  $.each(words, function(i, v) {
+      $("p").append($("<span>").text(v));
+  });
 }

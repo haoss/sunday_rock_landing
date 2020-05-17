@@ -28,6 +28,12 @@ button {
   &:focus, &:active {
     outline: none;
   }
+  &--yellow {
+    background: linear-gradient(to bottom, #ffe745, #ffa328);
+    color: $primary-color;
+    box-shadow: 0 0 24px #ffcc3a;
+    font-weight: 600;
+  }
   &--block {
     display: block;
     width: 100%;

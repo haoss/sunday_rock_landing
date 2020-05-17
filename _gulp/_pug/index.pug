@@ -44,33 +44,125 @@ html(lang="ru")
                 img(src="./images/img-girl.png", alt="").main-section__img-2
               .main-section__form
                 .main-section__form-content
-                  .main-section__form-head Индивидуальный урок вокала за 
-                    strong 1 руб.
-                  ul
-                    li Оставляете заявку
-                    li Выбираете время урока
-                    li Оплачиваете 1 руб.
-                    li Поёте и радуетесь!
-                form(action="" autocomplete="off")
-                  fieldset
-                    .form-group
-                      input(type="text" name="name" placeholder="Введите имя").form-control
-                    .form-group
-                      input(type="text" name="phone" placeholder="Введите телефон").form-control
-                    .form-group.form-group--mb21
-                      input(type="email" name="email" placeholder="Введите электронную почту").form-control
-                    .form-group
-                      label.label-checkbox
-                        input(type="checkbox" name="checkbox1")
-                        span.label-checkbox__input
-                        span.label-checkbox__label
-                          b Заниматься будет ребёнок
-                    .form-group.form-group--mb21
-                      input(type="text" name="age" placeholder="Введите возраст ребенка").form-control
-                  button(type="submit").btn.btn--block Хочу петь!
-                  .form-info.text-center Оставляя заявку, вы принимаете 
-                    a(href="#!" target="_blank") условия соглашения
+                  .form
+                    .main-section__form-head Индивидуальный урок вокала за 
+                      strong 1 руб.
+                    ul
+                      li Оставляете заявку
+                      li Выбираете время урока
+                      li Оплачиваете 1 руб.
+                      li Поёте и радуетесь!
+                    form(action="" autocomplete="off")
+                      fieldset
+                        .form-group
+                          input(type="text" name="name" placeholder="Введите имя").form-control
+                        .form-group
+                          input(type="text" name="phone" placeholder="Введите телефон").form-control
+                        .form-group.form-group--mb21
+                          input(type="email" name="email" placeholder="Введите электронную почту").form-control
+                        .form-group
+                          label.label-checkbox
+                            input(type="checkbox" name="checkbox1")
+                            span.label-checkbox__input
+                            span.label-checkbox__label
+                              b Заниматься будет ребёнок
+                        .form-group.form-group--mb21
+                          input(type="text" name="age" placeholder="Введите возраст ребенка").form-control
+                      button(type="submit").btn.btn--block Хочу петь!
+                      .form-info.text-center Оставляя заявку, вы принимаете 
+                        a(href="#!" target="_blank") условия соглашения
           
+        // About
+        .section.about
+          .container
+
+            .bg-img
+              .bg-img__wrapper
+                img(src="./images/img-block2-left.png", alt="").bg-img__img.bg-img__img--about-left
+                img(src="./images/img-block2-right.png", alt="").bg-img__img.bg-img__img--about-right
+
+            .content__head.about__head
+              h2 Занимайтесь с профессиональным преподавателем 
+                span.span на удобной платформе
+
+            .about__wrapper
+              .about__wrapper-img
+                .about__img
+                  img(src="./images/about-img.png", alt="")
+              .about__wrapper-content
+                ul
+                  li Преподаватели эстрадного и академического вокала с большим опытом
+                  li Удобный личный кабинет ученика
+                  li Расписание уроков
+                  li Оплаты и списания
+
+            .form-once
+              .form-once__wrapper
+                form(action="#!")
+                  .form-once__head Индивидуальный урок вокала за 
+                    strong 1 руб.
+                  fieldset
+                    .form-once__row1
+                      .div1
+                        .form-group
+                          input(type="text" name="name" placeholder="Введите имя").form-control
+                      .div2
+                        .form-group
+                          input(type="text" name="phone" placeholder="Введите телефон").form-control
+                      .div3
+                        .form-group
+                          input(type="email" name="email" placeholder="Введите электронную почту").form-control
+                    .form-once__row2
+                      .div1
+                        .form-group
+                          input(type="text" name="age" placeholder="Введите возраст ребенка").form-control
+                        .form-group
+                          label.label-checkbox
+                            input(type="checkbox" name="checkbox1")
+                            span.label-checkbox__input
+                            span.label-checkbox__label
+                              b Заниматься будет ребёнок
+                      .div2
+                        button(type="submit").btn.btn--yellow.btn--block Хочу петь!
+                        .form-info.text-center Оставляя заявку, вы принимаете 
+                          a(href="#!" target="_blank") условия соглашения
+
+        // Video
+        .section.video
+          .video__wrapper
+            .container
+
+              .content__head.video__head
+                h2 Начните учиться прямо сейчас на бесплатном курсе!
+
+              .video__content
+                p Автор курса — Наталья Канашова, преподаватель эстрадного вокала со стажем больше 30 лет.
+
+              .video__list
+                div
+                  a(href="https://www.youtube.com/watch?v=Jn_IIOyTr_A").video__block.popup-youtube
+                    span.video__block-shadow
+                    img(src="./tmp/video-img-1.png", alt="").video__block-img
+                    span.video__block-play
+                div
+                  a(href="https://www.youtube.com/watch?v=Jn_IIOyTr_A").video__block.popup-youtube
+                    span.video__block-shadow
+                    img(src="./tmp/video-img-2.png", alt="").video__block-img
+                    span.video__block-play
+                div
+                  a(href="https://www.youtube.com/watch?v=Jn_IIOyTr_A").video__block.popup-youtube
+                    span.video__block-shadow
+                    img(src="./tmp/video-img-3.png", alt="").video__block-img
+                    span.video__block-play
+                div
+                  a(href="https://www.youtube.com/watch?v=Jn_IIOyTr_A").video__block.popup-youtube
+                    span.video__block-shadow
+                    img(src="./tmp/video-img-4.png", alt="").video__block-img
+                    span.video__block-play
+
+              .video__more
+                img(src="", alt="")
+                span Больше уроков на нашем канале!
 
 
       include ./_include/_footer
