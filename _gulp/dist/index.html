@@ -30,7 +30,7 @@
                 <!-- Bg-top-->
                 <div class="container">
                     <div class="bg-img">
-                        <div class="bg-img__wrapper"><img class="bg-img__img bg-img__img--top-left" src="./images/img-block1-left.png" alt=""><img class="bg-img__img bg-img__img--top-right" src="./images/img-block1-right.png" alt=""></div>
+                        <div class="bg-img__wrapper"><img class="bg-img__img bg-img__img--top-left lazyload" data-src="./images/img-block1-left.png" alt=""><img class="bg-img__img bg-img__img--top-right lazyload" data-src="./images/img-block1-right.png" alt=""></div>
                     </div>
                 </div>
                 <!-- Main section-->
@@ -42,9 +42,9 @@
                         </div>
                         <div class="main-section__wrapper">
                             <div class="bg-img">
-                                <div class="bg-img__wrapper"><img class="bg-img__img bg-img__img--ms1" src="./images/img-main-section-1.png" alt=""><img class="bg-img__img bg-img__img--ms2" src="./images/img-main-section-2.png" alt=""></div>
+                                <div class="bg-img__wrapper"><img class="bg-img__img bg-img__img--ms1 lazyload" data-src="./images/img-main-section-1.png" alt=""><img class="bg-img__img bg-img__img--ms2 lazyload" data-src="./images/img-main-section-2.png" alt=""></div>
                             </div>
-                            <div class="main-section__img"><img class="main-section__img-1" src="./images/img-girl-bg.png" alt=""><img class="main-section__img-2" src="./images/img-girl.png" alt=""></div>
+                            <div class="main-section__img"><img class="main-section__img-1 lazyload" data-src="./images/img-girl-bg.png" alt=""><img class="main-section__img-2 lazyload" data-src="./images/img-girl.png" alt=""></div>
                             <div class="main-section__form">
                                 <div class="main-section__form-content">
                                     <div class="form">
@@ -58,13 +58,13 @@
                                         <form action="" autocomplete="off">
                                             <fieldset>
                                                 <div class="form-group">
-                                                    <input class="form-control" type="text" name="name" placeholder="Введите имя">
+                                                    <input class="form-control" type="text" name="name" placeholder="Введите имя" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input class="form-control" type="text" name="phone" placeholder="Введите телефон">
+                                                    <input class="form-control" type="text" name="phone" placeholder="Введите телефон" required>
                                                 </div>
                                                 <div class="form-group form-group--mb21">
-                                                    <input class="form-control" type="email" name="email" placeholder="Введите электронную почту">
+                                                    <input class="form-control" type="email" name="email" placeholder="Введите электронную почту" required>
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="label-checkbox">
@@ -72,7 +72,7 @@
                                                     </label>
                                                 </div>
                                                 <div class="form-group form-group--mb21">
-                                                    <input class="form-control" type="text" name="age" placeholder="Введите возраст ребенка">
+                                                    <input class="form-control" type="text" name="age" placeholder="Введите возраст ребенка" required>
                                                 </div>
                                             </fieldset>
                                             <button class="btn btn--block" type="submit">Хочу петь!</button>
@@ -88,14 +88,14 @@
                 <div class="section about">
                     <div class="container">
                         <div class="bg-img">
-                            <div class="bg-img__wrapper"><img class="bg-img__img bg-img__img--about-left" src="./images/img-block2-left.png" alt=""><img class="bg-img__img bg-img__img--about-right" src="./images/img-block2-right.png" alt=""></div>
+                            <div class="bg-img__wrapper"><img class="bg-img__img bg-img__img--about-left lazyload" data-src="./images/img-block2-left.png" alt=""><img class="bg-img__img bg-img__img--about-right lazyload" data-src="./images/img-block2-right.png" alt=""></div>
                         </div>
                         <div class="content__head about__head">
                             <h2>Занимайтесь с профессиональным преподавателем <span class="span">на удобной платформе</span></h2>
                         </div>
                         <div class="about__wrapper">
                             <div class="about__wrapper-img">
-                                <div class="about__img"><img src="./tmp/about-img.png" alt=""></div>
+                                <div class="about__img"><img class="lazyload" data-src="./tmp/about-img.png" alt=""></div>
                             </div>
                             <div class="about__wrapper-content">
                                 <ul>
@@ -114,24 +114,24 @@
                                                     <div class="form-once__row1">
                                                         <div class="div1">
                                                             <div class="form-group">
-                                                                <input class="form-control" type="text" name="name" placeholder="Введите имя">
+                                                                <input class="form-control" type="text" name="name" placeholder="Введите имя" required>
                                                             </div>
                                                         </div>
                                                         <div class="div2">
                                                             <div class="form-group">
-                                                                <input class="form-control" type="text" name="phone" placeholder="Введите телефон">
+                                                                <input class="form-control" type="text" name="phone" placeholder="Введите телефон" required>
                                                             </div>
                                                         </div>
                                                         <div class="div3">
                                                             <div class="form-group">
-                                                                <input class="form-control" type="email" name="email" placeholder="Введите электронную почту">
+                                                                <input class="form-control" type="email" name="email" placeholder="Введите электронную почту" required>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-once__row2">
                                                         <div class="div1">
                                                             <div class="form-group">
-                                                                <input class="form-control" type="text" name="age" placeholder="Введите возраст ребенка">
+                                                                <input class="form-control" type="text" name="age" placeholder="Введите возраст ребенка" required>
                                                             </div>
                                                             <div class="form-group">
                                                                 <label class="label-checkbox">
@@ -160,10 +160,10 @@
                             <p>Автор курса — Наталья Канашова, преподаватель эстрадного вокала со стажем больше 30 лет.</p>
                         </div>
                         <div class="video__list">
-                            <div><a class="video__block popup-youtube" href="https://www.youtube.com/watch?v=Jn_IIOyTr_A"><span class="video__block-shadow"></span><img class="video__block-img" src="./tmp/video-img-1.png" alt=""><span class="video__block-play"></span></a></div>
-                            <div><a class="video__block popup-youtube" href="https://www.youtube.com/watch?v=Jn_IIOyTr_A"><span class="video__block-shadow"></span><img class="video__block-img" src="./tmp/video-img-2.png" alt=""><span class="video__block-play"></span></a></div>
-                            <div><a class="video__block popup-youtube" href="https://www.youtube.com/watch?v=Jn_IIOyTr_A"><span class="video__block-shadow"></span><img class="video__block-img" src="./tmp/video-img-3.png" alt=""><span class="video__block-play"></span></a></div>
-                            <div><a class="video__block popup-youtube" href="https://www.youtube.com/watch?v=Jn_IIOyTr_A"><span class="video__block-shadow"></span><img class="video__block-img" src="./tmp/video-img-4.png" alt=""><span class="video__block-play"></span></a></div>
+                            <div><a class="video__block popup-youtube" href="https://www.youtube.com/watch?v=Jn_IIOyTr_A"><span class="video__block-shadow"></span><img class="video__block-img lazyload" data-src="./tmp/video-img-1.png" alt=""><span class="video__block-play"></span></a></div>
+                            <div><a class="video__block popup-youtube" href="https://www.youtube.com/watch?v=Jn_IIOyTr_A"><span class="video__block-shadow"></span><img class="video__block-img lazyload" data-src="./tmp/video-img-2.png" alt=""><span class="video__block-play"></span></a></div>
+                            <div><a class="video__block popup-youtube" href="https://www.youtube.com/watch?v=Jn_IIOyTr_A"><span class="video__block-shadow"></span><img class="video__block-img lazyload" data-src="./tmp/video-img-3.png" alt=""><span class="video__block-play"></span></a></div>
+                            <div><a class="video__block popup-youtube" href="https://www.youtube.com/watch?v=Jn_IIOyTr_A"><span class="video__block-shadow"></span><img class="video__block-img lazyload" data-src="./tmp/video-img-4.png" alt=""><span class="video__block-play"></span></a></div>
                         </div>
                         <div class="video__more"><a href="#!" target="_blank"><img src="./images/icon-youtube.png" alt=""></a><span>Больше уроков <b>на нашем канале!</b></span></div>
                     </div>
@@ -172,7 +172,7 @@
                 <div class="section school">
                     <div class="container">
                         <div class="bg-img">
-                            <div class="bg-img__wrapper"><img class="bg-img__img bg-img__img--school-right" src="./images/img-block1-left.png" alt=""></div>
+                            <div class="bg-img__wrapper"><img class="bg-img__img bg-img__img--school-right lazyload" data-src="./images/img-block1-left.png" alt=""></div>
                         </div>
                         <div class="content__head">
                             <h2>О школе</h2>
@@ -193,7 +193,7 @@
                                 </div>
                             </div>
                             <div class="school__wrapper-img">
-                                <div class="school__img"><img src="./tmp/school-img.png" alt=""></div>
+                                <div class="school__img"><img class="lazyload" data-src="./tmp/school-img.png" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -202,25 +202,25 @@
                 <div class="section comments">
                     <div class="container">
                         <div class="bg-img">
-                            <div class="bg-img__wrapper"><img class="bg-img__img bg-img__img--comments-left" src="./images/img-block3-left.png" alt=""></div>
+                            <div class="bg-img__wrapper"><img class="bg-img__img bg-img__img--comments-left lazyload" data-src="./images/img-block3-left.png" alt=""></div>
                         </div>
                         <div class="content__head comments__head">
                             <h2>Отзывы</h2>
                         </div>
                         <div class="comments__wrapper">
-                            <div class="comments__block"><img src="./tmp/comment-img-1.png" alt="">
+                            <div class="comments__block"><img class="lazyload" data-src="./tmp/comment-img-1.png" alt="">
                                 <div class="comments__block-content">
                                     <div class="comments__block-title">Ольга, Россия</div>
                                     <p>Занятия по Скайпу стали для меня отличным выходом, когда я переехала в другой город и не смогла продолжать заниматься очно. Преподаватель прекрасно видит тебя и слышит ошибки, поэтому может помочь и объяснить, что и как делать правильно.</p>
                                 </div>
                             </div>
-                            <div class="comments__block"><img src="./tmp/comment-img-2.png" alt="">
+                            <div class="comments__block"><img class="lazyload" data-src="./tmp/comment-img-2.png" alt="">
                                 <div class="comments__block-content">
                                     <div class="comments__block-title">Надежда, Израиль</div>
                                     <p>Я очень довольна, что взяла курс и уроки вокала по Cкайпу. Это просто и очень удобно!</p>
                                 </div>
                             </div>
-                            <div class="comments__block"><img src="./tmp/comment-img-3.png" alt="">
+                            <div class="comments__block"><img class="lazyload" data-src="./tmp/comment-img-3.png" alt="">
                                 <div class="comments__block-content">
                                     <div class="comments__block-title">Наталья, Россия</div>
                                     <p>Во время уроков по скайпу я стала лучше понимать и слышать себя, голос начал раскрываться!</p>
@@ -243,24 +243,24 @@
                                                     <div class="form-once__row1">
                                                         <div class="div1">
                                                             <div class="form-group">
-                                                                <input class="form-control" type="text" name="name" placeholder="Введите имя">
+                                                                <input class="form-control" type="text" name="name" placeholder="Введите имя" required>
                                                             </div>
                                                         </div>
                                                         <div class="div2">
                                                             <div class="form-group">
-                                                                <input class="form-control" type="text" name="phone" placeholder="Введите телефон">
+                                                                <input class="form-control" type="text" name="phone" placeholder="Введите телефон" required>
                                                             </div>
                                                         </div>
                                                         <div class="div3">
                                                             <div class="form-group">
-                                                                <input class="form-control" type="email" name="email" placeholder="Введите электронную почту">
+                                                                <input class="form-control" type="email" name="email" placeholder="Введите электронную почту" required>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-once__row2">
                                                         <div class="div1">
                                                             <div class="form-group">
-                                                                <input class="form-control" type="text" name="age" placeholder="Введите возраст ребенка">
+                                                                <input class="form-control" type="text" name="age" placeholder="Введите возраст ребенка" required>
                                                             </div>
                                                             <div class="form-group">
                                                                 <label class="label-checkbox">
@@ -283,16 +283,34 @@
             <!-- Footer-->
             <footer class="footer">
                 <div class="container">
-                    <div>&copy; 2018</div>
+                    <div class="footer__wrapper">
+                        <div class="footer__logo"><img src="./images/logo-footer.png" alt=""></div>
+                        <div class="footer__nav">
+                            <ul>
+                                <li><a href="#!">Оплатить занятия</a></li>
+                                <li><a href="#!">Личный кабинет</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__social">
+                            <ul>
+                                <li><a href="#!"><i class="icon-social icon-social--whatsapp"></i>WhatsApp</a></li>
+                                <li><a href="#!"><i class="icon-social icon-social--telegram"></i>Telegram</a></li>
+                                <li><a href="#!"><i class="icon-social icon-social--email"></i>Email</a></li>
+                                <li><a href="#!"><i class="icon-social icon-social--youtube"></i>YouTube</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__copyright"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAAB40lEQVQ4jW3UTYiNURgH8N977yXXV1FSSoPVPVYkyXL2PhbKYGOjLKZkpUgTGzXZKFla+Cjjq0gJyXKkiCl5SpOPGiElQkZz516Le97xzuSp0+k95/mf//95/ue8RavV6sdpvRiOiOvmREppPvbgGD7jVA1HcSXPR1JKK+cCsRqDOIwbGKqhiat4gu9YP4etjnX4ifu4g6KGNho5r43OHLYupvMMdbRr+aPIcwdLUkorKsA+LMVUzitQNCoJ01iMs/iYUnqaFfTnciYiopNSKqBWAdawACPYj83YhO25Icsq0meAnbzwFXfxDvcwGhETeIRvJVsJbOfRzIU3MS9L/11RNKtpjSzhDBZiI4bwCVv1/C1Bxf+Az3AZ5zJbPUvdm1Jamzu6KCK6KaUZ4AcM431ETJcnppSa2IELmMTDvFUvge2yWymlbRjADyzP4y0e4FrOm7GjQBERHXzBS7zS83QMBzESEX9KgpKxBMu1juW1cZzMh05l+UXeq5U+roKIaEfEpJ4N4xgta6rU14dGLTPsrrY6Irp4g+N6r6IKHMCLBi7iUkppV0TcrIA7+GV2DOpdw31Fq9Waj504gVu4rXf1qi9nTVa1AYfwuOh2u+WvYQsO5Bq6/0gUepY9x3m8jojOX80UmCFBA4SpAAAAAElFTkSuQmCC" alt="">Музыкальная школа<br>Sunday Rock Online, 2020</div>
+                    </div>
                 </div>
             </footer>
-            <div style="height: 1000px; background-color: #000"></div>
         </div>
         <!-- Load Scripts-->
         <!-- Footer js-->
         <script src="./js/libs/jquery/jquery-3.3.1.min.js"></script>
         <script src="./js/libs/jquery/jquery-migrate-3.0.1.min.js"></script>
         <script src="./js/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="./js/libs/jquery.validate.min.js"></script>
+        <script src="./js/libs/lazysizes.min.js"></script>
         <script src="./js/common.js"></script>
     </body>
 </html>

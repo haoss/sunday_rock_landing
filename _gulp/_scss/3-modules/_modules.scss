@@ -281,6 +281,11 @@
       color: $color-white;
     }
   }
+  .form-control {
+    &+.error {
+      color: $primary-color;
+    }
+  }
 }
 
 .video {
@@ -311,13 +316,15 @@
   }
   &__block {
     width: 524px;
-    height: 295px;
     display: block;
     margin-bottom: 50px;
     position: relative;
     img {
       position: relative;
       z-index: 3;
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
     &::before {
       content: '';
@@ -373,6 +380,7 @@
   }
   &__list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     &>div {
       padding: 0 15px;
@@ -465,7 +473,7 @@
     }
   }
   &__content {
-    font-size: 21px;
+    font-size: rem(21px);
     margin-left: 83px;
     ul {
       margin: 0;
@@ -501,7 +509,7 @@
   &__block {
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 500;
     &+[class*="__block"] {
       margin-top: 80px;
@@ -516,6 +524,7 @@
       height: 100px;
       border-radius: 50%;
       object-fit: cover;
+      flex-shrink: 0;
     }
     &-content {
       padding-left: 50px;
@@ -530,6 +539,26 @@
 .learn {
   padding-top: 60px;
   &__head {
-    margin-bottom: 50px;
+    .h2, h2 {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.icon-social {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background: url('../images/social-sprites.png') -0 -54px no-repeat;
+  &--email {
+    background-position: -0 -18px;
+  }
+  &--telegram {
+    background-position: -0 -36px;
+  }
+  &--youtube {
+    background-position: -0 -0;
   }
 }

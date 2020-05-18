@@ -3,24 +3,6 @@
 // Document ready
 $(document).on('ready', function(){
 
-  // E-mail Ajax Send
-  // Documentation & Example: https://github.com/agragregra/uniMail
-  $("form").submit(function() { //Change
-    var th = $(this);
-    $.ajax({
-      type: "POST",
-      url: "mail.php", //Change
-      data: th.serialize()
-    }).done(function() {
-      alert("Thank you!");
-      setTimeout(function() {
-        // Done Functions
-        th.trigger("reset");
-      }, 1000);
-    });
-    return false;
-  });
-
   // Magnific popup gallery
   $('.gallery').each(function() {
     $(this).magnificPopup({
@@ -72,6 +54,10 @@ $(document).on('ready', function(){
     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
   });
 
+  $("form").each(function(){
+    $(this).validate();
+  })
+
   headerScroll();
   wordWrap();
 
@@ -84,9 +70,6 @@ $(document).on('ready', function(){
   } catch(err) {
 
   };
-
-  // simpleForm version 2015-09-23 14:30 GMT +2
-  simpleForm('form.form-callback');
 });
 
 $(window).on('load', function() {
@@ -97,70 +80,6 @@ $(window).on('scroll', function() {
   headerScroll();
 });
 $(window).on('resize', function() { });
-
-/*
-version 2015-09-23 14:30 GMT +2
-*/
-function simpleForm(form, callback) {
-  $(document).on('submit', form, function(e){
-    e.preventDefault();
-    var formData = {};
-    var hasFile = false;
-    if ($(this).find('[type=file]').length < 1) {
-      formData = $(this).serialize();
-    }
-    else {
-      formData = new FormData();
-      $(this).find('[name]').each(function(){
-
-        switch($(this).prop('type')) {
-
-          case 'file':
-            if ($(this)[0]['files'].length > 0) {
-              formData.append($(this).prop('name'), $(this)[0]['files'][0]);
-              hasFile = true;
-            }
-            break;
-
-          case 'radio':
-          case 'checkbox':
-            if (!$(this).prop('checked')) {
-              break;
-            }
-            formData.append($(this).prop('name'), $(this).val().toString());
-            break;
-
-          default:
-            formData.append($(this).prop('name'), $(this).val().toString());
-            break;
-        }
-      });
-    }
-
-    $.ajax({
-      url: $(this).prop('action'),
-      data: formData,
-      type: 'POST',
-      contentType : hasFile ? 'multipart/form-data' : 'application/x-www-form-urlencoded',
-      cache       : false,
-      processData : false,
-      success: function(response) {
-        $(form).removeClass('ajax-waiting');
-        $(form).find("[type=submit]").prop("disabled", false);
-        $(form).html($(response).find(form).html());
-
-        if (typeof callback === 'function') {
-          callback(response);
-        }
-      }
-    });
-
-    $(form).addClass('ajax-waiting');
-    $(form).find("[type=submit]").prop("disabled", true);
-
-    return false;
-  });
-}
 
 function headerScroll() {
   var header = $('.header');
@@ -180,3 +99,24 @@ function wordWrap() {
     $(".video__content p").append($("<span>").text(v));
   });
 }
+
+jQuery.extend(jQuery.validator.messages, {
+  required: "Обязательное поле",
+  remote: "Please fix this field.",
+  email: "Введите правильный e-mail.",
+  url: "Please enter a valid URL.",
+  date: "Please enter a valid date.",
+  dateISO: "Please enter a valid date (ISO).",
+  number: "Please enter a valid number.",
+  digits: "Please enter only digits.",
+  creditcard: "Please enter a valid credit card number.",
+  equalTo: "Пароли не совпадают.",
+
+  accept: "Please enter a value with a valid extension.",
+  maxlength: jQuery.validator.format("Please enter no more than {0} characters."),
+  minlength: jQuery.validator.format("Please enter at least {0} characters."),
+  rangelength: jQuery.validator.format("Please enter a value between {0} and {1} characters long."),
+  range: jQuery.validator.format("Please enter a value between {0} and {1}."),
+  max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
+  min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")
+});

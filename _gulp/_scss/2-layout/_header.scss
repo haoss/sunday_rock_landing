@@ -38,4 +38,9 @@
       background: darken(#ffe534,15%);
     }
   }
+  &__logo {
+    img {
+      display: block;
+    }
+  }
 }

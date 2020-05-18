@@ -22,8 +22,8 @@ html(lang="ru")
         .container
           .bg-img
             .bg-img__wrapper
-              img(src="./images/img-block1-left.png", alt="").bg-img__img.bg-img__img--top-left
-              img(src="./images/img-block1-right.png", alt="").bg-img__img.bg-img__img--top-right
+              img(data-src="./images/img-block1-left.png", alt="").bg-img__img.bg-img__img--top-left.lazyload
+              img(data-src="./images/img-block1-right.png", alt="").bg-img__img.bg-img__img--top-right.lazyload
         
         // Main section
         .section.main-section
@@ -37,11 +37,11 @@ html(lang="ru")
             .main-section__wrapper
               .bg-img
                 .bg-img__wrapper
-                  img(src="./images/img-main-section-1.png", alt="").bg-img__img.bg-img__img--ms1
-                  img(src="./images/img-main-section-2.png", alt="").bg-img__img.bg-img__img--ms2
+                  img(data-src="./images/img-main-section-1.png", alt="").bg-img__img.bg-img__img--ms1.lazyload
+                  img(data-src="./images/img-main-section-2.png", alt="").bg-img__img.bg-img__img--ms2.lazyload
               .main-section__img
-                img(src="./images/img-girl-bg.png", alt="").main-section__img-1
-                img(src="./images/img-girl.png", alt="").main-section__img-2
+                img(data-src="./images/img-girl-bg.png", alt="").main-section__img-1.lazyload
+                img(data-src="./images/img-girl.png", alt="").main-section__img-2.lazyload
               .main-section__form
                 .main-section__form-content
                   .form
@@ -55,11 +55,11 @@ html(lang="ru")
                     form(action="" autocomplete="off")
                       fieldset
                         .form-group
-                          input(type="text" name="name" placeholder="Введите имя").form-control
+                          input(type="text" name="name" placeholder="Введите имя" required).form-control
                         .form-group
-                          input(type="text" name="phone" placeholder="Введите телефон").form-control
+                          input(type="text" name="phone" placeholder="Введите телефон" required).form-control
                         .form-group.form-group--mb21
-                          input(type="email" name="email" placeholder="Введите электронную почту").form-control
+                          input(type="email" name="email" placeholder="Введите электронную почту" required).form-control
                         .form-group
                           label.label-checkbox
                             input(type="checkbox" name="checkbox1")
@@ -67,7 +67,7 @@ html(lang="ru")
                             span.label-checkbox__label
                               b Заниматься будет ребёнок
                         .form-group.form-group--mb21
-                          input(type="text" name="age" placeholder="Введите возраст ребенка").form-control
+                          input(type="text" name="age" placeholder="Введите возраст ребенка" required).form-control
                       button(type="submit").btn.btn--block Хочу петь!
                       .form-info.text-center Оставляя заявку, вы принимаете 
                         a(href="#!" target="_blank") условия соглашения
@@ -78,8 +78,8 @@ html(lang="ru")
 
             .bg-img
               .bg-img__wrapper
-                img(src="./images/img-block2-left.png", alt="").bg-img__img.bg-img__img--about-left
-                img(src="./images/img-block2-right.png", alt="").bg-img__img.bg-img__img--about-right
+                img(data-src="./images/img-block2-left.png", alt="").bg-img__img.bg-img__img--about-left.lazyload
+                img(data-src="./images/img-block2-right.png", alt="").bg-img__img.bg-img__img--about-right.lazyload
 
             .content__head.about__head
               h2 Занимайтесь с профессиональным преподавателем 
@@ -88,7 +88,7 @@ html(lang="ru")
             .about__wrapper
               .about__wrapper-img
                 .about__img
-                  img(src="./tmp/about-img.png", alt="")
+                  img(data-src="./tmp/about-img.png", alt="").lazyload
               .about__wrapper-content
                 ul
                   li Преподаватели эстрадного и академического вокала с большим опытом
@@ -112,22 +112,22 @@ html(lang="ru")
               div
                 a(href="https://www.youtube.com/watch?v=Jn_IIOyTr_A").video__block.popup-youtube
                   span.video__block-shadow
-                  img(src="./tmp/video-img-1.png", alt="").video__block-img
+                  img(data-src="./tmp/video-img-1.png", alt="").video__block-img.lazyload
                   span.video__block-play
               div
                 a(href="https://www.youtube.com/watch?v=Jn_IIOyTr_A").video__block.popup-youtube
                   span.video__block-shadow
-                  img(src="./tmp/video-img-2.png", alt="").video__block-img
+                  img(data-src="./tmp/video-img-2.png", alt="").video__block-img.lazyload
                   span.video__block-play
               div
                 a(href="https://www.youtube.com/watch?v=Jn_IIOyTr_A").video__block.popup-youtube
                   span.video__block-shadow
-                  img(src="./tmp/video-img-3.png", alt="").video__block-img
+                  img(data-src="./tmp/video-img-3.png", alt="").video__block-img.lazyload
                   span.video__block-play
               div
                 a(href="https://www.youtube.com/watch?v=Jn_IIOyTr_A").video__block.popup-youtube
                   span.video__block-shadow
-                  img(src="./tmp/video-img-4.png", alt="").video__block-img
+                  img(data-src="./tmp/video-img-4.png", alt="").video__block-img.lazyload
                   span.video__block-play
 
             .video__more
@@ -142,7 +142,7 @@ html(lang="ru")
 
             .bg-img
               .bg-img__wrapper
-                img(src="./images/img-block1-left.png", alt="").bg-img__img.bg-img__img--school-right
+                img(data-src="./images/img-block1-left.png", alt="").bg-img__img.bg-img__img--school-right.lazyload
 
             .content__head
               h2 О школе
@@ -172,7 +172,7 @@ html(lang="ru")
 
               .school__wrapper-img
                 .school__img
-                  img(src="./tmp/school-img.png", alt="")
+                  img(data-src="./tmp/school-img.png", alt="").lazyload
 
         // Comments
         .section.comments
@@ -180,24 +180,24 @@ html(lang="ru")
 
             .bg-img
               .bg-img__wrapper
-                img(src="./images/img-block3-left.png", alt="").bg-img__img.bg-img__img--comments-left
+                img(data-src="./images/img-block3-left.png", alt="").bg-img__img.bg-img__img--comments-left.lazyload
 
             .content__head.comments__head
               h2 Отзывы
 
             .comments__wrapper
               .comments__block
-                img(src="./tmp/comment-img-1.png", alt="")
+                img(data-src="./tmp/comment-img-1.png", alt="").lazyload
                 .comments__block-content
                   .comments__block-title Ольга, Россия
                   p Занятия по Скайпу стали для меня отличным выходом, когда я переехала в другой город и не смогла продолжать заниматься очно. Преподаватель прекрасно видит тебя и слышит ошибки, поэтому может помочь и объяснить, что и как делать правильно.
               .comments__block
-                img(src="./tmp/comment-img-2.png", alt="")
+                img(data-src="./tmp/comment-img-2.png", alt="").lazyload
                 .comments__block-content
                   .comments__block-title Надежда, Израиль
                   p Я очень довольна, что взяла курс и уроки вокала по Cкайпу. Это просто и очень удобно!
               .comments__block
-                img(src="./tmp/comment-img-3.png", alt="")
+                img(data-src="./tmp/comment-img-3.png", alt="").lazyload
                 .comments__block-content
                   .comments__block-title Наталья, Россия
                   p Во время уроков по скайпу я стала лучше понимать и слышать себя, голос начал раскрываться!
@@ -212,7 +212,7 @@ html(lang="ru")
             +formOnce
 
       include ./_include/_footer
-      div(style="height: 1000px; background-color: #000")
+      //- div(style="height: 1000px; background-color: #000")
 
     // Load Scripts
     include ./_include/_footer-js
