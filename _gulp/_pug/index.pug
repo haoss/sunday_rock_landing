@@ -88,7 +88,7 @@ html(lang="ru")
             .about__wrapper
               .about__wrapper-img
                 .about__img
-                  img(src="./images/about-img.png", alt="")
+                  img(src="./tmp/about-img.png", alt="")
               .about__wrapper-content
                 ul
                   li Преподаватели эстрадного и академического вокала с большим опытом
@@ -140,24 +140,73 @@ html(lang="ru")
         .section.school
           .container
 
+            .bg-img
+              .bg-img__wrapper
+                img(src="./images/img-block1-left.png", alt="").bg-img__img.bg-img__img--school-right
+
             .content__head
               h2 О школе
 
-            .school__content
+            .school__untitle
               p Sunday Rock Online — это онлайн-школа музыки. Теперь вы можете учиться у лучших преподавателей, не выходя из дома!
+            
+            .school__wrapper
+              .school__wrapper-content
+                .school__content
+                  ul
+                    li
+                      img(src="./tmp/icon-school-1.png", alt="")
+                      | Учим музыке с 2012 года
+                    li
+                      img(src="./tmp/icon-school-2.png", alt="")
+                      | С 2018 года преподаем онлайн
+                    li
+                      img(src="./tmp/icon-school-3.png", alt="")
+                      | Обучили больше 5 000 человек
+                    li
+                      img(src="./tmp/icon-school-4.png", alt="")
+                      | Нам доверяют ученики со всего мира
+                    li
+                      img(src="./tmp/icon-school-5.png", alt="")
+                      | Преподаватели с музыкальным образованием
+
+              .school__wrapper-img
+                .school__img
+                  img(src="./tmp/school-img.png", alt="")
 
         // Comments
         .section.comments
           .container
 
-            .content__head
+            .bg-img
+              .bg-img__wrapper
+                img(src="./images/img-block3-left.png", alt="").bg-img__img.bg-img__img--comments-left
+
+            .content__head.comments__head
               h2 Отзывы
+
+            .comments__wrapper
+              .comments__block
+                img(src="./tmp/comment-img-1.png", alt="")
+                .comments__block-content
+                  .comments__block-title Ольга, Россия
+                  p Занятия по Скайпу стали для меня отличным выходом, когда я переехала в другой город и не смогла продолжать заниматься очно. Преподаватель прекрасно видит тебя и слышит ошибки, поэтому может помочь и объяснить, что и как делать правильно.
+              .comments__block
+                img(src="./tmp/comment-img-2.png", alt="")
+                .comments__block-content
+                  .comments__block-title Надежда, Израиль
+                  p Я очень довольна, что взяла курс и уроки вокала по Cкайпу. Это просто и очень удобно!
+              .comments__block
+                img(src="./tmp/comment-img-3.png", alt="")
+                .comments__block-content
+                  .comments__block-title Наталья, Россия
+                  p Во время уроков по скайпу я стала лучше понимать и слышать себя, голос начал раскрываться!
 
         // Learn
         .section.learn
           .container
 
-            .content__head
+            .content__head.learn__head
               h2 Начните учиться прямо сейчас!
 
             +formOnce

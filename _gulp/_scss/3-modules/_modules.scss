@@ -1,5 +1,6 @@
 /* modules */
 .content {
+  padding-bottom: 120px;
   &__head {
     text-align: center;
     margin: 0 auto;
@@ -130,6 +131,15 @@
       margin-top: -350px;
       margin-left: 40px;
       left: 100%;
+    }
+    &--school-right {
+      left: 100%;
+      margin-top: -518px;
+      margin-left: 110px;
+    }
+    &--comments-left {
+      transform: translateX(-100%);
+      margin-top: -240px;
     }
   }
 }
@@ -418,12 +428,108 @@
 }
 
 .school {
-  &__content {
+  padding-top: 80px;
+  &__untitle {
     font-size: rem(27px);
+    text-align: center;
+    margin: 0 auto 100px;
+    max-width: 945px;
+    font-weight: 500;
     p {
       &:last-child {
         margin-bottom: 0;
       }
     }
+  }
+  &__wrapper {
+    display: flex;
+    &-content {
+      width: 585px;
+      padding-right: 30px;
+      flex-shrink: 0;
+    }
+    &-img {
+      flex-grow: 1;
+    }
+  }
+  &__img {
+    width: 1495px;
+    height: 344px;
+    background: linear-gradient(to bottom, #d21a1a, #910000);
+    position: relative;
+    border-radius: 170px;
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 56px;
+    }
+  }
+  &__content {
+    font-size: 21px;
+    margin-left: 83px;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        position: relative;
+        padding-left: 48px;
+        min-height: 28px;
+        margin: 0 0 23px 0;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.comments {
+  padding-top: 100px;
+  padding-bottom: 105px;
+  &__head {
+    .h2, h2 {
+      margin-bottom: 100px;
+    }
+  }
+  &__wrapper {
+    max-width: 810px;
+    margin: 0 auto;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    &+[class*="__block"] {
+      margin-top: 80px;
+    }
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    &-content {
+      padding-left: 50px;
+    }
+    &-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.learn {
+  padding-top: 60px;
+  &__head {
+    margin-bottom: 50px;
   }
 }
