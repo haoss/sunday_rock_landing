@@ -13,7 +13,7 @@
 }
 
 .main-section {
-  background: #ae0101 url('../images/bg-main-section.png') bottom center no-repeat;
+  background: url('../images/bg-main-section.png') bottom center no-repeat;
   mask: url('../images/bg-main-section.png');
   mask-position: bottom center;
   color: $color-white;
@@ -107,8 +107,9 @@
     left: 0;
     pointer-events: none;
     &--top-left {
-      transform: translateX(calc(-100% - 35px));
+      transform: translateX(-100%);
       margin-top: -75px;
+      left: -35px;
     }
     &--top-right {
       left: 100%;
@@ -195,7 +196,7 @@
       clip-path: polygon(0 0,100% 12%,96% 85%,14% 100%);
       position: relative;
       z-index: 5;
-      background: pink;
+      // background: pink;
     }
     &::before {
       content: '';
