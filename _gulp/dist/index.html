@@ -11,7 +11,7 @@
         <meta name="format-detection" content="address=no">
         <meta name="format-detection" content="email=no">
         <meta content="notranslate" name="google">
-        <link rel="stylesheet" href="./css/style.min.css">
+        <link rel="stylesheet" href="./css/style.min.css?v19052020-1105">
     </head>
     <body>
         <div class="base">
@@ -58,25 +58,41 @@
                                         <form action="" autocomplete="off">
                                             <fieldset>
                                                 <div class="form-group">
-                                                    <input class="form-control" type="text" name="name" placeholder="Введите имя" required>
+                                                    <input class="form-control" type="text" name="name" placeholder="Анна" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input class="form-control" type="text" name="phone" placeholder="Введите телефон" required>
+                                                    <input class="form-control" type="text" name="phone" placeholder="8 922 222 22 22" required>
                                                 </div>
                                                 <div class="form-group form-group--mb21">
-                                                    <input class="form-control" type="email" name="email" placeholder="Введите электронную почту" required>
+                                                    <input class="form-control" type="email" name="email" placeholder="anna@gmail.com" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="label-checkbox">
+                                                    <label class="label-checkbox j-label-age">
                                                         <input type="checkbox" name="checkbox1"><span class="label-checkbox__input"></span><span class="label-checkbox__label"><b>Заниматься будет ребёнок</b></span>
                                                     </label>
                                                 </div>
-                                                <div class="form-group form-group--mb21">
-                                                    <input class="form-control" type="text" name="age" placeholder="Введите возраст ребенка" required>
+                                                <div class="form-group form-group--mb21 hidden j-label-block">
+                                                    <select class="form-control" name="kid_age" placeholder="Сколько лет ребёнку?">
+                                                        <option value disabled selected>Сколько лет ребёнку?</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                    </select>
                                                 </div>
                                             </fieldset>
                                             <button class="btn btn--block" type="submit">Хочу петь!</button>
-                                            <div class="form-info text-center">Оставляя заявку, вы принимаете <a href="#!" target="_blank">условия соглашения</a></div>
+                                            <div class="form-info">Оставляя заявку, вы принимаете <a href="#!" target="_blank">условия соглашения</a></div>
                                         </form>
                                     </div>
                                 </div>
@@ -114,34 +130,50 @@
                                                     <div class="form-once__row1">
                                                         <div class="div1">
                                                             <div class="form-group">
-                                                                <input class="form-control" type="text" name="name" placeholder="Введите имя" required>
+                                                                <input class="form-control" type="text" name="name" placeholder="Анна" required>
                                                             </div>
                                                         </div>
                                                         <div class="div2">
                                                             <div class="form-group">
-                                                                <input class="form-control" type="text" name="phone" placeholder="Введите телефон" required>
+                                                                <input class="form-control" type="text" name="phone" placeholder="8 922 222 22 22" required>
                                                             </div>
                                                         </div>
                                                         <div class="div3">
                                                             <div class="form-group">
-                                                                <input class="form-control" type="email" name="email" placeholder="Введите электронную почту" required>
+                                                                <input class="form-control" type="email" name="email" placeholder="anna@gmail.com" required>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-once__row2">
                                                         <div class="div1">
-                                                            <div class="form-group">
-                                                                <input class="form-control" type="text" name="age" placeholder="Введите возраст ребенка" required>
+                                                            <div class="form-group hidden j-label-block">
+                                                                <select class="form-control" name="kid_age" placeholder="Сколько лет ребёнку?">
+                                                                    <option value disabled selected>Сколько лет ребёнку?</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                                    <option value="13">13</option>
+                                                                    <option value="14">14</option>
+                                                                    <option value="15">15</option>
+                                                                    <option value="16">16</option>
+                                                                    <option value="17">17</option>
+                                                                </select>
                                                             </div>
                                                             <div class="form-group">
-                                                                <label class="label-checkbox">
+                                                                <label class="label-checkbox j-label-age">
                                                                     <input type="checkbox" name="checkbox1"><span class="label-checkbox__input"></span><span class="label-checkbox__label"><b>Заниматься будет ребёнок</b></span>
                                                                 </label>
                                                             </div>
                                                         </div>
                                                         <div class="div2">
                                                             <button class="btn btn--yellow btn--block" type="submit">Хочу петь!</button>
-                                                            <div class="form-info text-center">Оставляя заявку, вы принимаете <a href="#!" target="_blank">условия соглашения</a></div>
+                                                            <div class="form-info">Оставляя заявку, вы принимаете <a href="#!" target="_blank">условия соглашения</a></div>
                                                         </div>
                                                     </div>
                                                 </fieldset>
@@ -165,7 +197,7 @@
                             <div><a class="video__block popup-youtube" href="https://www.youtube.com/watch?v=Jn_IIOyTr_A"><span class="video__block-shadow"></span><img class="video__block-img lazyload" data-src="./tmp/video-img-3.png" alt=""><span class="video__block-play"></span></a></div>
                             <div><a class="video__block popup-youtube" href="https://www.youtube.com/watch?v=Jn_IIOyTr_A"><span class="video__block-shadow"></span><img class="video__block-img lazyload" data-src="./tmp/video-img-4.png" alt=""><span class="video__block-play"></span></a></div>
                         </div>
-                        <div class="video__more"><a href="#!" target="_blank"><img src="./images/icon-youtube.png" alt=""></a><span>Больше уроков <b>на нашем канале!</b></span></div>
+                        <div class="video__more"><a href="#!" target="_blank"><img src="./images/icon-youtube.png" alt=""></a><span>Больше уроков <a href="#!" target="_blank"><b>на нашем канале!</b></a></span></div>
                     </div>
                 </div>
                 <!-- School-->
@@ -243,34 +275,50 @@
                                                     <div class="form-once__row1">
                                                         <div class="div1">
                                                             <div class="form-group">
-                                                                <input class="form-control" type="text" name="name" placeholder="Введите имя" required>
+                                                                <input class="form-control" type="text" name="name" placeholder="Анна" required>
                                                             </div>
                                                         </div>
                                                         <div class="div2">
                                                             <div class="form-group">
-                                                                <input class="form-control" type="text" name="phone" placeholder="Введите телефон" required>
+                                                                <input class="form-control" type="text" name="phone" placeholder="8 922 222 22 22" required>
                                                             </div>
                                                         </div>
                                                         <div class="div3">
                                                             <div class="form-group">
-                                                                <input class="form-control" type="email" name="email" placeholder="Введите электронную почту" required>
+                                                                <input class="form-control" type="email" name="email" placeholder="anna@gmail.com" required>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-once__row2">
                                                         <div class="div1">
-                                                            <div class="form-group">
-                                                                <input class="form-control" type="text" name="age" placeholder="Введите возраст ребенка" required>
+                                                            <div class="form-group hidden j-label-block">
+                                                                <select class="form-control" name="kid_age" placeholder="Сколько лет ребёнку?">
+                                                                    <option value disabled selected>Сколько лет ребёнку?</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                                    <option value="13">13</option>
+                                                                    <option value="14">14</option>
+                                                                    <option value="15">15</option>
+                                                                    <option value="16">16</option>
+                                                                    <option value="17">17</option>
+                                                                </select>
                                                             </div>
                                                             <div class="form-group">
-                                                                <label class="label-checkbox">
+                                                                <label class="label-checkbox j-label-age">
                                                                     <input type="checkbox" name="checkbox1"><span class="label-checkbox__input"></span><span class="label-checkbox__label"><b>Заниматься будет ребёнок</b></span>
                                                                 </label>
                                                             </div>
                                                         </div>
                                                         <div class="div2">
                                                             <button class="btn btn--yellow btn--block" type="submit">Хочу петь!</button>
-                                                            <div class="form-info text-center">Оставляя заявку, вы принимаете <a href="#!" target="_blank">условия соглашения</a></div>
+                                                            <div class="form-info">Оставляя заявку, вы принимаете <a href="#!" target="_blank">условия соглашения</a></div>
                                                         </div>
                                                     </div>
                                                 </fieldset>

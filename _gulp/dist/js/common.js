@@ -58,8 +58,8 @@ $(document).on('ready', function(){
     $(this).validate();
   })
 
-  headerScroll();
   wordWrap();
+  showAge();
 
   // Chrome Smooth Scroll
   try {
@@ -76,9 +76,7 @@ $(window).on('load', function() {
   $(".loader").delay(400).fadeOut("slow");
 });
 
-$(window).on('scroll', function() {
-  headerScroll();
-});
+$(window).on('scroll', function() { });
 $(window).on('resize', function() { });
 
 function headerScroll() {
@@ -97,6 +95,22 @@ function wordWrap() {
   $(".video__content p").empty();
   $.each(words, function(i, v) {
     $(".video__content p").append($("<span>").text(v));
+  });
+}
+
+function showAge() {
+  var btn = $('.j-label-age input[type="checkbox"]');
+
+  btn.each(function(){
+    var _this = $(this);
+    var block = _this.parents('form').find('.j-label-block');
+    _this.on('click', function(e) {
+      if (_this.prop("checked")) {
+        block.removeClass('hidden');
+      } else {
+        block.addClass('hidden');
+      }
+    });
   });
 }
 

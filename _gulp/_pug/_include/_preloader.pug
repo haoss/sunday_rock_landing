@@ -14,24 +14,39 @@ mixin formOnce
           .form-once__row1
             .div1
               .form-group
-                input(type="text" name="name" placeholder="Введите имя" required).form-control
+                input(type="text" name="name" placeholder="Анна" required).form-control
             .div2
               .form-group
-                input(type="text" name="phone" placeholder="Введите телефон" required).form-control
+                input(type="text" name="phone" placeholder="8 922 222 22 22" required).form-control
             .div3
               .form-group
-                input(type="email" name="email" placeholder="Введите электронную почту" required).form-control
+                input(type="email" name="email" placeholder="anna@gmail.com" required).form-control
           .form-once__row2
             .div1
+              .form-group.hidden.j-label-block
+                select.form-control(name='kid_age' placeholder='Сколько лет ребёнку?')
+                  option(value disabled selected) Сколько лет ребёнку?
+                  option(value='4') 4
+                  option(value='5') 5
+                  option(value='6') 6
+                  option(value='7') 7
+                  option(value='8') 8
+                  option(value='9') 9
+                  option(value='10') 10
+                  option(value='11') 11
+                  option(value='12') 12
+                  option(value='13') 13
+                  option(value='14') 14
+                  option(value='15') 15
+                  option(value='16') 16
+                  option(value='17') 17
               .form-group
-                input(type="text" name="age" placeholder="Введите возраст ребенка" required).form-control
-              .form-group
-                label.label-checkbox
+                label.label-checkbox.j-label-age
                   input(type="checkbox" name="checkbox1")
                   span.label-checkbox__input
                   span.label-checkbox__label
                     b Заниматься будет ребёнок
             .div2
               button(type="submit").btn.btn--yellow.btn--block Хочу петь!
-              .form-info.text-center Оставляя заявку, вы принимаете 
+              .form-info Оставляя заявку, вы принимаете 
                 a(href="#!" target="_blank") условия соглашения

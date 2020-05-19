@@ -24,7 +24,7 @@
     font-size: rem(35px);
   }
   .main-section {
-    height: 970px;
+    height: 1000px;
     &__wrapper {
       padding-left: 30px;
     }
@@ -97,11 +97,13 @@
   .main-section {
     padding-top: 105px;
     height: 845px;
+    
     &__wrapper {
       padding-left: 0;
     }
     &__form {
       width: 300px;
+      height: 525px;
       padding: 28px 25px 30px 25px;
       box-shadow: -3px -3px 0 #ffa21e;
       border-radius: 20px;
@@ -175,22 +177,23 @@
       }
     }
   }
+  .form-once {
+    min-height: 273px;
+  }
   .form-group {
     margin-bottom: 12px;
   }
   .form-control {
-    height: 31px;
-    font-size: rem(14px);
-    padding-right: 20px;
-    padding-left: 20px;
+    height: 40px;
+    font-size: rem(16px);
   }
   .label-checkbox {
     font-size: rem(14px);
     padding-left: 25px;
     &__input {
       position: absolute;
-      width: 15px;
-      height: 15px;
+      width: 17px;
+      height: 17px;
     }
   }
   .btn {
@@ -216,11 +219,13 @@
         font-size: rem(30px);
       }
     }
-    &__row1>div.div1 {
-      width: 150px;
-    }
-    &__row1>div.div2 {
-      width: 185px;
+    &__row1, &__row2 {
+      flex-direction: column;
+      &>div {
+        padding: 0 !important;
+        width: 100% !important;
+        margin: 0 !important
+      }
     }
   }
   .video {
@@ -258,7 +263,7 @@
       padding: 18px 0;
       background-size: 510px 70px;
       font-size: rem(22px);
-      a {
+      &>a:first-child {
         vertical-align: 2px;
       }
       img {
@@ -398,10 +403,12 @@
       position: relative;
       margin-top: -20px;
       width: 100%;
-      padding-left: 36px;
-      padding-right: 38px;
+      padding-left: 26px;
+      padding-right: 26px;
+      height: auto;
       &-head {
         margin-bottom: 15px;
+        padding-left: 18px;
       }
       &-content {
         ul {
@@ -411,15 +418,16 @@
     }
   }
   .form-control, .label-checkbox {
-    font-size: rem(11px);
+    font-size: rem(16px);
+    height: 37px;
   }
-  .label-checkbox {
-    &__input {
-      width: 12px;
-      height: 12px;
-      top: -1px;
-    }
-  }
+  // .label-checkbox {
+  //   &__input {
+  //     width: 12px;
+  //     height: 12px;
+  //     top: -1px;
+  //   }
+  // }
   .form-group {
     &--mb21 {
       margin-bottom: 18px;
@@ -470,7 +478,7 @@
   }
   .form-once {
     box-shadow: -2px -2px 0 #8e0101;
-    padding: 30px 43px 35px 45px;
+    padding: 30px 35px 35px 35px;
     border-radius: 20px;
     &__head {
       text-align: left;
@@ -480,14 +488,7 @@
         font-size: rem(25px);
       }
     }
-    &__row1, &__row2 {
-      flex-direction: column;
-      &>div {
-        padding: 0 !important;
-        width: 100% !important;
-        margin: 0 !important
-      }
-    }
+    
   }
   .video {
     &__content {
@@ -508,13 +509,13 @@
       }
     }
     &__more {
-      width: 266px;
-      height: 37px;
-      background-size: 266px 37px;
-      padding: 9px 0;
-      font-size: rem(12px);
+      width: 300px;
+      height: 42px;
+      background-size: 300px 42px;
+      padding: 11px 0;
+      font-size: rem(14px);
       img {
-        width: 20px;
+        width: 25px;
       }
     }
     &__list {
@@ -570,7 +571,7 @@
         padding-left: 20px;
       }
       &-title {
-        margin: 5px;
+        margin-bottom: 5px;
       }
       &+[class*="__block"] {
         margin-top: 20px;
@@ -620,13 +621,13 @@
     white-space: nowrap;
     font-size: rem(8px);
   }
-  .form-once {
-    .btn {
-      height: 30px;
-      width: 165px;
-      display: inline-block;
-      font-size: rem(12px);
-      font-weight: 700;
-    }
-  }
+  // .form-once {
+  //   .btn {
+  //     height: 30px;
+  //     width: 165px;
+  //     display: inline-block;
+  //     font-size: rem(12px);
+  //     font-weight: 700;
+  //   }
+  // }
 }
