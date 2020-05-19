@@ -43,4 +43,13 @@
   &__logo {
     margin-left: 35px;
   }
+  &__nav {
+    ul {
+      li {
+        a {
+          padding-left: 0;
+        }
+      }
+    }
+  }
 }

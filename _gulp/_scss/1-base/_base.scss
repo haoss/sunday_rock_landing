@@ -18,7 +18,7 @@ html, body {
 
 body {
   // background-color: alpha(var(--color-primary), 1);
-  background: #fafafa;
+  background: $color-white;
   font-size: rem(17px);
   font-family: $font-montserrat;
   color: $primary-color;
@@ -30,6 +30,8 @@ body {
   position: relative;
   max-width: 1920px;
   margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  background: #fafafa;
 }
 
 //  Typography
