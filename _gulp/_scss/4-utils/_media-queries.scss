@@ -17,8 +17,15 @@
 }
 
 @media (max-width: 1199px) {
+  .cost {
+    padding-bottom: 50px;
+    &__block-content {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
   .h1, h1 {
-    font-size: rem(55px);
+    font-size: rem(45px);
   }
   .h2, h2 {
     font-size: rem(35px);
@@ -27,6 +34,9 @@
     height: 1000px;
     &__wrapper {
       padding-left: 30px;
+    }
+    &__untitle {
+      font-size: rem(26px);
     }
   }
   .about {
@@ -45,6 +55,9 @@
         width: 560px;
       }
     }
+  }
+  .comments {
+    padding-top: 100px;
   }
   .video {
     height: auto;
@@ -83,21 +96,40 @@
 }
 
 @media (max-width: 991px) {
-  .content {
-    &__head {
-      text-align: left;
+  .cost {
+    &__row {
+      flex-wrap: wrap;
+    }
+    &__block {
+      width: calc(50% - 14px);
+      margin-bottom: 30px;
+      &-content {
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+    }
+  }
+  .header {
+    margin-top: 20px;
+    &__btn {
+      margin-left: 25px;
+    }
+    &__whatsapp {
+      font-size: 15px;
     }
   }
   .h1, h1 {
-    font-size: rem(45px);
+    font-size: rem(35px);
   }
   .h2, h2 {
     font-size: rem(25px);
   }
   .main-section {
     padding-top: 105px;
-    height: 845px;
-    
+    height: 785px;
+    &__untitle {
+      font-size: rem(21px);
+    }
     &__wrapper {
       padding-left: 0;
     }
@@ -143,37 +175,29 @@
         margin-bottom: 50px;
       }
     }
-    &__wrapper {
-      margin-bottom: 70px;
-      &-content {
-        width: 350px;
-        font-size: rem(20px);
-        ul {
-          li {
-            line-height: 1.2;
-            &+li {
-              margin-top: 18px;
-            }
-          }
-        }
+    &__faq {
+      margin-bottom: 50px;
+      &-question {
+        font-size: 16px;
+        min-height: 62px;
+      }
+      &-answer {
+        padding-left: 10px;
+        font-size: 16px;
       }
     }
-    &__img {
-      margin: 0;
-      img {
-        width: 340px;
+    &__content {
+      padding-bottom: 60px;
+      .first {
+        img[src*=mobile] {
+          display: block;
+        }
+        img[src*=desktop] {
+          display: none;
+        }
       }
-      &::before {
-        width: 327px;
-        height: 170px;
-        background-size: 327px 170px;
-      }
-      &::after {
-        width: 348px;
-        height: 183px;
-        background-size: 348px 183px;
-        margin-left: -20px;
-        margin-top: -17px;
+      .last {
+        padding-left: 35px;
       }
     }
   }
@@ -211,8 +235,8 @@
     }
   }
   .form-once {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
     &__head {
       font-size: rem(20px);
       strong {
@@ -229,8 +253,18 @@
     }
   }
   .video {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 55px;
+    padding-bottom: 35px;
+    &__head {
+      text-align: center;
+      .h2, h2 {
+        font-size: rem(22px);
+        margin-bottom: 30px;
+        .--bg {
+          padding: 0 10px;
+        }
+      }
+    }
     &__block {
       width: 310px;
       &-play {
@@ -273,6 +307,7 @@
   }
   .school {
     padding-top: 65px;
+    padding-bottom: 60px;
     &__untitle {
       font-size: rem(20px);
       line-height: 1.2;
@@ -281,6 +316,13 @@
     }
     &__content {
       font-size: rem(16px);
+      ul {
+        li {
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
     }
     &__img {
       height: 264px;
@@ -337,6 +379,17 @@
       margin-right: 0;
     }
   }
+  .learn {
+    &__head {
+      max-width: 480px;
+    }
+  }
+  .form-once {
+    max-width: 550px;
+  }
+  .form-info {
+    text-align: center;
+  }
 }
 
 @media (max-width: 767px) {
@@ -345,9 +398,10 @@
     padding: 0 10px;
   }
   .h1, h1 {
-    font-size: rem(35px);
+    font-size: rem(28px);
   }
   .header {
+    margin-top: 0px;
     &__logo {
       img {
         width: 155px;
@@ -355,27 +409,44 @@
     }
     &__wrapper {
       height: 62px;
+      position: relative;
+      max-width: 300px;
+      margin: 0 auto;
       .is-scroll & {
         height: 40px;
       }
     }
     &__btn {
-      width: 73px;
-      height: 20px;
+      width: 79px;
+      height: 26px;
       font-size: rem(11px);
       min-width: inherit;
     }
+    &__whatsapp {
+      position: absolute;
+      right: 0;
+      font-size: rem(11px);
+      top: 58px;
+      &::before {
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
+      }
+    }
   }
   .main-section {
-    padding-top: 80px;
+    padding-top: 120px;
     height: auto;
     &__untitle {
       display: none;
     }
     &__head {
-      text-align: left;
+      text-align: center;
       h1, .h1 {
-        margin-bottom: 10px;
+        margin-bottom: 25px;
+        .--color {
+          color: #ffe745;
+        }
       }
     }
     &__wrapper {
@@ -425,13 +496,6 @@
     font-size: rem(16px);
     height: 37px;
   }
-  // .label-checkbox {
-  //   &__input {
-  //     width: 12px;
-  //     height: 12px;
-  //     top: -1px;
-  //   }
-  // }
   .form-group {
     &--mb21 {
       margin-bottom: 18px;
@@ -443,20 +507,26 @@
       align-items: center;
       margin-bottom: 45px;
     }
-    &__img {
+    &__faq {
       margin-bottom: 50px;
-      img {
-        width: 510px;
+      &-question {
+        font-size: 13px;
+        min-height: 42px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
       }
-      &::before {
-        width: 497px;
-        height: 260px;
-        background-size: 497px 260px;
+      &-answer {
+        font-size: 14px;
       }
-      &::after {
-        width: 498px;
-        height: 253px;
-        background-size: 498px 253px;
+    }
+    &__content {
+      flex-direction: column;
+      padding-bottom: 0;
+      margin-bottom: 60px;
+      .last {
+        padding-left: 0;
+        padding-top: 35px;
       }
     }
   }
@@ -495,6 +565,9 @@
     
   }
   .video {
+    &__head {
+      max-width: 295px;
+    }
     &__content {
       font-size: rem(18px);
       p {
@@ -506,7 +579,7 @@
     }
     &__block {
       width: 260px;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
       &::before {
         width: 338px;
         height: 135px;
@@ -570,22 +643,91 @@
       img {
         width: 60px;
         height: 60px;
-      }
-      &-content {
-        padding-left: 20px;
+        margin: 0;
+        position: absolute;
       }
       &-title {
-        margin-bottom: 5px;
+        padding-top: 5px;
+        margin-bottom: 25px;
+        padding-left: 80px;
+        text-align: left;
+        font-size: 12px;
+        min-height: 60px;
       }
       &+[class*="__block"] {
         margin-top: 20px;
+      }
+      &-content {
+        text-align: center;
+        font-size: rem(13px);
+      }
+    }
+    &__wrapper {
+      .swiper-button-next, .swiper-button-prev {
+        top: 31px;
+        transform: none;
       }
     }
   }
   .learn {
     &__head {
+      max-width: 280px;
       .h2, h2 {
-        margin: 30px;
+        font-size: rem(25px);
+        margin-bottom: 30px;
+        .--bg {
+          &::before {
+            width: 276px;
+            height: 36px;
+            background-size: 276px 36px;
+            left: -30px;
+            top: -3px;
+          }
+        }
+      }
+    }
+  }
+  .cost {
+    padding-bottom: 50px;
+    .nav-tabs {
+      margin-bottom: 25px;
+    }
+    .nav-link {
+      height: 35px;
+      line-height: 35px;
+      width: 35px;
+      font-size: 20px;
+    }
+    &__block {
+      font-size: 12px;
+      &-title {
+        font-size: 16px;
+        margin-bottom: 5px;
+        b {
+          font-size: 22px;
+        }
+      }
+      &-content {
+        min-height: 170px;
+        padding: 25px 20px;
+        .div1 {
+          height: 28px;
+          line-height: 28px;
+          font-size: 20px;
+          &+del {
+            margin-top: 10px;
+            font-size: 15px;
+          }
+        }
+        .div2 {
+          height: 32px;
+          line-height: 32px;
+          font-size: 16px;
+          &+del {
+            margin-top: 10px;
+            font-size: 16px;
+          }
+        }
       }
     }
   }
@@ -593,31 +735,14 @@
 
 @media (max-width: 479px) {
   .about {
-    &__img {
-      img {
-        width: 310px;
+    &__content {
+      .last {
+        width: 290px;
       }
-      &::before {
-        width: 294px;
-        height: 155px;
-        background-size: 294px 155px;
-      }
-      &::after {
-        display: none;
-      }
-    }
-    &__wrapper {
       &-content {
-        font-size: rem(18px);
-        padding-left: 0;
-        width: 300px;
-        ul {
-          li {
-            &:nth-child(2) {
-              max-width: 210px;
-            }
-          }
-        }
+        font-size: 14px;
+        height: 320px;
+        background-size: contain;
       }
     }
   }
@@ -625,13 +750,11 @@
     white-space: nowrap;
     font-size: rem(8px);
   }
-  // .form-once {
-  //   .btn {
-  //     height: 30px;
-  //     width: 165px;
-  //     display: inline-block;
-  //     font-size: rem(12px);
-  //     font-weight: 700;
-  //   }
-  // }
+  .comments {
+    &__wrapper {
+      .swiper-container {
+        margin: 0 45px;
+      }
+    }
+  }
 }

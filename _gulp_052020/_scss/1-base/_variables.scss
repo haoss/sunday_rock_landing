@@ -1,0 +1,21 @@
+// :root {
+//   @include defineColorHSL(--color-primary, 0, 89%, 56%);
+// }
+// [data-theme="dark"] {
+//   @include defineColorHSL(--color-primary, 0, 100%, 56%);
+// }
+
+$primary-color: #202020;
+
+$link-color: blue;
+
+$color-white: #ffffff;
+$color-gray: #f1f1f1;
+$color-black: #000000;
+$color-red: #e20b0b;
+$color-pink: pink;
+$color-orange: #ffa21e;
+
+$primary-font: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+$font-montserrat: 'Montserrat', $primary-font;

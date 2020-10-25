@@ -1,0 +1,46 @@
+/* header */
+.header {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  &.is-scroll {
+    // background-color: rgba($color-white,.1);
+    background-color: rgba(#ae0101,.8);
+  }
+  &__wrapper {
+    height: 107px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: height 0.35s;
+    max-width: 1007px;
+    margin: 0 auto;
+    .is-scroll & {
+      height: 67px;
+    }
+  }
+  &-holder {
+    height: 107px;
+  }
+  &__btn {
+    height: 42px;
+    min-width: 157px;
+    border-radius: 35px;
+    background: #ffe534;
+    color: $primary-color;
+    transition: all 0.35s;
+    font-weight: 600;
+    font-size: rem(22px);
+    &:hover {
+      background: darken(#ffe534,15%);
+    }
+  }
+  &__logo {
+    img {
+      display: block;
+    }
+  }
+}

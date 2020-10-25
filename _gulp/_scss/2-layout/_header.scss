@@ -6,6 +6,7 @@
   left: 0;
   right: 0;
   z-index: 100;
+  margin-top: 50px;
   &.is-scroll {
     // background-color: rgba($color-white,.1);
     background-color: rgba(#ae0101,.8);
@@ -13,7 +14,6 @@
   &__wrapper {
     height: 107px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     transition: height 0.35s;
     max-width: 1007px;
@@ -26,19 +26,39 @@
     height: 107px;
   }
   &__btn {
-    height: 42px;
-    min-width: 157px;
+    height: 51px;
+    min-width: 155px;
     border-radius: 35px;
-    background: #ffe534;
+    background: linear-gradient(to bottom, #ffff83, #ffff5a);
     color: $primary-color;
     transition: all 0.35s;
     font-weight: 600;
     font-size: rem(22px);
+    margin-left: 90px;
     &:hover {
-      background: darken(#ffe534,15%);
+      opacity: 0.7;
+    }
+  }
+  &__whatsapp {
+    display: flex;
+    align-items: center;
+    font-size: rem(22px);
+    color: $color-white;
+    font-weight: 600;
+    transition: all 0.35s;
+    &::before {
+      content: '';
+      width: 57px;
+      height: 57px;
+      background: url('../images/icon-whatsapp.png') 0 0 no-repeat;
+      margin-right: 15px;
+    }
+    &:hover {
+      opacity: 0.7;
     }
   }
   &__logo {
+    flex-grow: 1;
     img {
       display: block;
     }

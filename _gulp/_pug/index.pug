@@ -30,9 +30,10 @@ html(lang="ru")
           .container
             
             .main-section__head
-              h1 Онлайн-школа вокала
-              .main-section__untitle Учитесь петь красиво 
-                strong где удобно и когда удобно!
+              h1 Онлайн-школа вокала 
+                span.--color Sunday rock
+              .main-section__untitle Создай красивый и сильный голос с  
+                strong преподавателем
 
             .main-section__wrapper
               .bg-img
@@ -93,64 +94,168 @@ html(lang="ru")
 
             .bg-img
               .bg-img__wrapper
-                img(data-src="./images/img-block2-left.png", alt="").bg-img__img.bg-img__img--about-left.lazyload
-                img(data-src="./images/img-block2-right.png", alt="").bg-img__img.bg-img__img--about-right.lazyload
+                img(src="./images/img-block5-left.png", alt="").bg-img__img.bg-img__img--about-left
+                img(src="./images/img-block2-right.png", alt="").bg-img__img.bg-img__img--about-right
 
             .content__head.about__head
               h2 Занимайтесь с профессиональным преподавателем 
                 span.span на удобной платформе
 
-            .about__wrapper
-              .about__wrapper-img
-                .about__img
-                  img(data-src="./tmp/about-img.png", alt="").lazyload
-              .about__wrapper-content
-                ul
-                  li Преподаватели эстрадного и академического вокала с большим опытом
-                  li Удобный личный кабинет ученика
-                  li Расписание уроков
-                  li Оплаты и списания
+            .about__content
+              .first
+                img(src="./tmp/about-img-desktop.png", alt="")
+                img(src="./tmp/about-img-mobile.png", alt="")
+              .last
+                .about__content-content
+                  ul
+                    li Для взрослых и детей с 5 лет
+                    li Занимайтесь онлайн из дома или офиса
+                    li Профессиональные преподаватели
+                    li Удобная платформа для занятий
+                    li Запись уроков (beta)
+                    li Доступные цены 
+                      span.--color &nbsp;от 650р. 
+
+            .about__faq
+              .about__faq-question В каком возрасте можно обучаться вокалу? 
+              .about__faq-answer
+                p Другой вопрос, что можно петь просто для собственного удовольствия, а можно начать заниматься профессионально, а это уже совершенно другие нагрузки на связки. И если делать это с самого раннего детства то только под руководством опытного педагога, который имеет большой опыт и практику работы именно с маленькими детьми. А также положительные отзывы и здоровые голоса учеников. 
+              .about__faq-question.--even У меня нет слуха и голоса, можно ли обучиться вокалу? 
+              .about__faq-answer
+                p А если Вам далеко уже за... то это не должно Вас смущать и если хочется петь - нужно это делать. заниматься под чутким руководством педагога, выполнять рекомендации и все обязательно получится. Ведь голос не стареет, если не подвергать его воздействию курения и алкоголя. Голос - это Ваша вечная молодость! 
+              .about__faq-question Мне не нравиться свой голос, можно ли это преодолеть? 
+              .about__faq-answer
+                p Все очень индивидуально. Если есть явный талант и сильный голос, то конечно, глупо ждать какого-то возраста, чтоб начать активно заниматься. Нужно петь, нужно учиться и продвигать себя. Добиваться поставленных целей. но делать это аккуратно, не перенапрягать связки. 
+              .about__faq-question.--even Сколько времени потребуется, чтобы поставить голос? 
+              .about__faq-answer
+                p Все очень индивидуально. Если есть явный талант и сильный голос, то конечно, глупо ждать какого-то возраста, чтоб начать активно заниматься. Нужно петь, нужно учиться и продвигать себя. Добиваться поставленных целей. но делать это аккуратно, не перенапрягать связки. 
+              .about__faq-question Эффективно ли заниматься онлайн? 
+              .about__faq-answer
+                p Все очень индивидуально. Если есть явный талант и сильный голос, то конечно, глупо ждать какого-то возраста, чтоб начать активно заниматься. Нужно петь, нужно учиться и продвигать себя. Добиваться поставленных целей. но делать это аккуратно, не перенапрягать связки.
 
             +formOnce
 
-        // Video
-        .section.video
+        // Cost
+        .section.cost
           .container
 
-            .content__head.video__head
-              h2 Начните учиться прямо сейчас на бесплатном курсе!
+            .bg-img
+              .bg-img__wrapper
+                img(data-src="./images/img-block4-left.png", alt="").bg-img__img.bg-img__img--cost-left.lazyload
 
-            .video__content
-              p Автор курса — Наталья Канашова, преподаватель эстрадного вокала со стажем больше 30 лет.
+            .content__head.cost__head
+              h2 Стоимость
 
-            .video__list
-              div
-                a(href="https://www.youtube.com/watch?v=Jn_IIOyTr_A").video__block.popup-youtube
-                  span.video__block-shadow
-                  img(data-src="./tmp/video-img-1.png", alt="").video__block-img.lazyload
-                  span.video__block-play
-              div
-                a(href="https://www.youtube.com/watch?v=Jn_IIOyTr_A").video__block.popup-youtube
-                  span.video__block-shadow
-                  img(data-src="./tmp/video-img-2.png", alt="").video__block-img.lazyload
-                  span.video__block-play
-              div
-                a(href="https://www.youtube.com/watch?v=Jn_IIOyTr_A").video__block.popup-youtube
-                  span.video__block-shadow
-                  img(data-src="./tmp/video-img-3.png", alt="").video__block-img.lazyload
-                  span.video__block-play
-              div
-                a(href="https://www.youtube.com/watch?v=Jn_IIOyTr_A").video__block.popup-youtube
-                  span.video__block-shadow
-                  img(data-src="./tmp/video-img-4.png", alt="").video__block-img.lazyload
-                  span.video__block-play
+            ul.nav.nav-tabs#myTab(role='tablist')
+              li.nav-item(role='presentation')
+                a.nav-link.active#tab1-tab(data-toggle='tab' href='#tab1' role='tab' aria-controls='tab1' aria-selected='true')
+                  i.icon-rouble
+              li.nav-item(role='presentation')
+                a.nav-link#tab2-tab(data-toggle='tab' href='#tab2' role='tab' aria-controls='tab2' aria-selected='false')
+                  .icon-dollar
+            .tab-content
+              .tab-pane.fade.show.active#tab1(role='tabpanel' aria-labelledby='tab1-tab')
+                .cost__row
+                  .cost__block
+                    .cost__block-title
+                      b 32 
+                      | урока
+                    .cost__block-content
+                      div.div1 20 800
+                      del 25 280 
+                        i.icon-rouble
+                      div.div2 650/урок
+                      del 790
+                        i.icon-rouble
+                        | /урок
+                  .cost__block
+                    .cost__block-title
+                      b 16 
+                      | урока
+                    .cost__block-content
+                      div.div1 11 400
+                      del 12 640 
+                        i.icon-rouble
+                      div.div2 690/урок
+                      del 790
+                        i.icon-rouble
+                        | /урок
+                  .cost__block
+                    .cost__block-title
+                      b 8 
+                      | урока
+                    .cost__block-content
+                      div.div1 5 920
+                      del 6 320 
+                        i.icon-rouble
+                      div.div2 740/урок
+                      del 790
+                        i.icon-rouble
+                        | /урок
+                  .cost__block
+                    .cost__block-title
+                      b 4 
+                      | урока
+                    .cost__block-content
+                      div.div1 2 960
+                      del 3 100 
+                        i.icon-rouble
+                      div.div2 650/урок
+                      del 790
+                        i.icon-rouble
+                        | /урок
 
-            .video__more
-              a(href="#!" target="_blank")
-                img(src="./images/icon-youtube.png", alt="")
-              span Больше уроков 
-                a(href="#!" target="_blank")
-                  b на нашем канале!
+              .tab-pane#tab2(role='tabpanel' aria-labelledby='tab2-tab')
+                .cost__row
+                  .cost__block
+                    .cost__block-title
+                      b 32 
+                      | урока
+                    .cost__block-content
+                      div.div1 20 800
+                      del 25 280 
+                        i.icon-dollar
+                      div.div2 650/урок 
+                      del 790
+                        i.icon-dollar
+                        | /урок 
+                  .cost__block
+                    .cost__block-title
+                      b 16 
+                      | урока
+                    .cost__block-content
+                      div.div1 11 400
+                      del 12 640 
+                        i.icon-dollar
+                      div.div2 690/урок 
+                      del 790
+                        i.icon-dollar
+                        | /урок 
+                  .cost__block
+                    .cost__block-title
+                      b 8 
+                      | урока
+                    .cost__block-content
+                      div.div1 5 920
+                      del 6 320 
+                        i.icon-dollar
+                      div.div2 740/урок 
+                      del 790
+                        i.icon-dollar
+                        | /урок 
+                  .cost__block
+                    .cost__block-title
+                      b 4 
+                      | урока
+                    .cost__block-content
+                      div.div1 2 960
+                      del 3 100 
+                        i.icon-dollar
+                      div.div2 650/урок 
+                      del 790
+                        i.icon-dollar
+                        | /урок 
+
 
         // School
         .section.school
@@ -190,40 +295,118 @@ html(lang="ru")
                 .school__img
                   img(data-src="./tmp/school-img.png", alt="").lazyload
 
+        // Video
+        .section.video
+          .container
+
+            .content__head.video__head
+              h2 Обучайтесь 
+                span.--bg бесплатно
+                |  на нашем канале
+
+            .video__list
+              div
+                a(href="https://www.youtube.com/watch?v=Jn_IIOyTr_A").video__block.popup-youtube
+                  span.video__block-shadow
+                  img(data-src="./tmp/video-img-1.png", alt="").video__block-img.lazyload
+                  span.video__block-play
+              div
+                a(href="https://www.youtube.com/watch?v=Jn_IIOyTr_A").video__block.popup-youtube
+                  span.video__block-shadow
+                  img(data-src="./tmp/video-img-2.png", alt="").video__block-img.lazyload
+                  span.video__block-play
+
+            .video__more
+              a(href="#!" target="_blank")
+                img(src="./images/icon-youtube.png", alt="")
+              span Больше уроков 
+                a(href="#!" target="_blank")
+                  b на нашем канале!
+
         // Comments
         .section.comments
           .container
 
             .bg-img
               .bg-img__wrapper
-                img(data-src="./images/img-block3-left.png", alt="").bg-img__img.bg-img__img--comments-left.lazyload
+                img(data-src="./images/img-block4-left.png", alt="").bg-img__img.bg-img__img--comments-left.lazyload
 
             .content__head.comments__head
               h2 Отзывы
 
             .comments__wrapper
-              .comments__block
-                img(data-src="./tmp/comment-img-1.png", alt="").lazyload
-                .comments__block-content
-                  .comments__block-title Ольга, Россия
-                  p Занятия по Скайпу стали для меня отличным выходом, когда я переехала в другой город и не смогла продолжать заниматься очно. Преподаватель прекрасно видит тебя и слышит ошибки, поэтому может помочь и объяснить, что и как делать правильно.
-              .comments__block
-                img(data-src="./tmp/comment-img-2.png", alt="").lazyload
-                .comments__block-content
-                  .comments__block-title Надежда, Израиль
-                  p Я очень довольна, что взяла курс и уроки вокала по Cкайпу. Это просто и очень удобно!
-              .comments__block
-                img(data-src="./tmp/comment-img-3.png", alt="").lazyload
-                .comments__block-content
-                  .comments__block-title Наталья, Россия
-                  p Во время уроков по скайпу я стала лучше понимать и слышать себя, голос начал раскрываться!
+              .swiper-container
+                .swiper-wrapper
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-1.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Петр Петров,
+                          br
+                          | Россия, Москва
+                          br
+                          | Срок обучения: 3 месяца
+                        p Очень понравились занятия по свадебным прическам! Так жаль что они закончились! Как преподаватель, Светлана очень понравилась и как человек тоже! Объясняет понятно, если что-то не ясно или не получается объясняет и показывает хоть на каждом занятии. Морально поддерживает, что для меня оказалось очень важно. Можно снимать фото и видео по ходу занятия, это очень помогает при отработке дома. Для видео причесок рассказывает лаконично и понятно, без лишней воды. На занятиях можно попробовать разные продукты и инструменты, соответственно не нужно перебирать разные марки и тратить деньги на ненужное. Я очень рада, что смогла попасть на индивидуальные занятия к Светлане, считаю это более эффективно чем групповые. Если решусь на обучение макияжу, то тоже пойду к Свете! 
+                        p Дата публикации: 01.02.2020
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-2.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Надежда, Израиль
+                        p Я очень довольна, что взяла курс и уроки вокала по Cкайпу. Это просто и очень удобно!
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-3.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Наталья, Россия
+                        p Во время уроков по скайпу я стала лучше понимать и слышать себя, голос начал раскрываться!
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-1.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Ольга, Россия
+                        p Занятия по Скайпу стали для меня отличным выходом, когда я переехала в другой город и не смогла продолжать заниматься очно. Преподаватель прекрасно видит тебя и слышит ошибки, поэтому может помочь и объяснить, что и как делать правильно.
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-2.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Надежда, Израиль
+                        p Я очень довольна, что взяла курс и уроки вокала по Cкайпу. Это просто и очень удобно!
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-3.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Наталья, Россия
+                        p Во время уроков по скайпу я стала лучше понимать и слышать себя, голос начал раскрываться!
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-1.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Ольга, Россия
+                        p Занятия по Скайпу стали для меня отличным выходом, когда я переехала в другой город и не смогла продолжать заниматься очно. Преподаватель прекрасно видит тебя и слышит ошибки, поэтому может помочь и объяснить, что и как делать правильно.
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-2.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Надежда, Израиль
+                        p Я очень довольна, что взяла курс и уроки вокала по Cкайпу. Это просто и очень удобно!
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-3.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Наталья, Россия
+                        p Во время уроков по скайпу я стала лучше понимать и слышать себя, голос начал раскрываться!
+              //  Add Arrows 
+              .swiper-button-next
+              .swiper-button-prev
 
         // Learn
         .section.learn
           .container
 
             .content__head.learn__head
-              h2 Начните учиться прямо сейчас!
+              h2 Начните учиться 
+                span.--bg прямо сейчас!
 
             +formOnce
 
