@@ -564,9 +564,11 @@
       text-align: left;
       margin-bottom: 15px;
       font-size: rem(18px);
+      .--block {
+        display: block;
+      }
       strong {
         font-size: rem(33px);
-        display: block;
       }
     }
     
