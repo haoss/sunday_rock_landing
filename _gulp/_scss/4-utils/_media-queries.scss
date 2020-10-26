@@ -441,7 +441,7 @@
   }
   .main-section {
     padding-top: 120px;
-    height: 1030;
+    height: 1030px;
     &__untitle {
       display: none;
     }
@@ -523,6 +523,7 @@
       }
       &-answer {
         font-size: 14px;
+        margin-bottom: 30px;
       }
     }
     &__content {
