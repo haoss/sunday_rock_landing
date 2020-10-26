@@ -46,7 +46,9 @@ html(lang="ru")
               .main-section__form
                 .main-section__form-content
                   .form
-                    .main-section__form-head Индивидуальный урок вокала за 
+                    .main-section__form-head Индивидуальный 
+                      br 
+                      | урок вокала за 
                       strong 1 руб.
                     ul
                       li Оставляете заявку
@@ -55,12 +57,12 @@ html(lang="ru")
                       li Поёте и радуетесь!
                     form(action="" autocomplete="off")
                       fieldset
-                        .form-group
-                          input(type="text" name="name" placeholder="Анна" required).form-control
-                        .form-group
-                          input(type="text" name="phone" placeholder="8 922 222 22 22" required).form-control
-                        .form-group.form-group--mb21
-                          input(type="email" name="email" placeholder="anna@gmail.com" required).form-control
+                        .form-group.has-error
+                          input(type="text" name="name" placeholder="Анна" required value="Поле не заполнено").form-control
+                        .form-group.has-error
+                          input(type="text" name="phone" placeholder="8 922 222 22 22" required value="Поле не заполнено").form-control
+                        .form-group.form-group--mb21.has-success
+                          input(type="email" name="email" placeholder="anna@gmail.com" required value="Заполнено корректно").form-control
                         .form-group
                           label.label-checkbox.j-label-age
                             input(type="checkbox" name="checkbox1")

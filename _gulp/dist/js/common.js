@@ -54,9 +54,9 @@ $(document).on('ready', function(){
     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
   });
 
-  $("form").each(function(){
-    $(this).validate();
-  });
+  // $("form").each(function(){
+  //   $(this).validate();
+  // });
 
   var swiper = new Swiper('.comments__wrapper .swiper-container', {
     slidesPerView: 3,
