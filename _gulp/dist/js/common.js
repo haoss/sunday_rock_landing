@@ -66,21 +66,13 @@ $(document).on('ready', function(){
       prevEl: '.comments__wrapper .swiper-button-prev',
     },
     breakpoints: {
-      // when window width is >= 320px
       320: {
         slidesPerView: 1,
         spaceBetween: 10,
         autoHeight: false
       },
-      // when window width is >= 480px
-      767: {
+      1199: {
         slidesPerView: 2,
-        spaceBetween: 30,
-        autoHeight: false
-      },
-      // when window width is >= 640px
-      991: {
-        slidesPerView: 3,
         spaceBetween: 65
       }
     }
