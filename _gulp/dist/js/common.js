@@ -80,6 +80,7 @@ $(document).on('ready', function(){
 
   wordWrap();
   showAge();
+  faq();
 
   // Chrome Smooth Scroll
   try {
@@ -154,3 +155,16 @@ jQuery.extend(jQuery.validator.messages, {
   max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
   min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")
 });
+
+function faq() {
+  var btn = $('.about__faq-question');
+
+  btn.on('click', function(){
+    var _this = $(this);
+    if (_this.hasClass('is-active')) {
+      _this.removeClass('is-active')
+    } else {
+      _this.addClass('is-active')
+    }
+  });
+}

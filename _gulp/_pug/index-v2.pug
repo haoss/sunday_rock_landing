@@ -1,0 +1,402 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Главная' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Главная 2' + ' - Sunday Rock online' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body
+    .base
+
+      // Preloader
+      include ./_include/_preloader
+
+      include ./_include/_header-v2
+
+      // Content
+      main.content
+
+        // Bg-top
+        .container
+          .bg-img
+            .bg-img__wrapper
+              img(data-src="./images/img-block1-left.png", alt="").bg-img__img.bg-img__img--top-left.lazyload
+              img(data-src="./images/img-block1-right.png", alt="").bg-img__img.bg-img__img--top-right.lazyload
+        
+        // Main section
+        .section.main-section.--v2
+          .container
+            
+            .main-section__head
+              h1 Онлайн-школа гитары 
+                span.--color Sunday rock
+              .main-section__untitle Прокачай мастерство игры на гитаре с 
+                strong преподавателем
+
+            .main-section__wrapper
+              .main-section__img
+                img(data-src="./images/img-girl-2.png", alt="").main-section__img-2.lazyload
+              .main-section__form
+                .main-section__form-content
+                  .form
+                    .main-section__form-head Индивидуальный 
+                      br 
+                      | урок игры на гитаре
+                    ul
+                      li Оставляете заявку
+                      li Выбираете время урока
+                      li Оплачиваете 1 руб.
+                      li Поёте и радуетесь!
+                    form(action="" autocomplete="off")
+                      fieldset
+                        .form-group.has-error
+                          input(type="text" name="name" placeholder="Анна" required value="Поле не заполнено").form-control
+                        .form-group.has-error
+                          input(type="text" name="phone" placeholder="8 922 222 22 22" required value="Поле не заполнено").form-control
+                        .form-group.form-group--mb21.has-success
+                          input(type="email" name="email" placeholder="anna@gmail.com" required value="Заполнено корректно").form-control
+                        .form-group
+                          label.label-checkbox.j-label-age
+                            input(type="checkbox" name="checkbox1")
+                            span.label-checkbox__input
+                            span.label-checkbox__label
+                              b Заниматься будет ребёнок
+                        .form-group.form-group--mb21.hidden.j-label-block
+                          select.form-control(name='kid_age' placeholder='Сколько лет ребёнку?')
+                            option(value disabled selected) Сколько лет ребёнку?
+                            option(value='4') 4
+                            option(value='5') 5
+                            option(value='6') 6
+                            option(value='7') 7
+                            option(value='8') 8
+                            option(value='9') 9
+                            option(value='10') 10
+                            option(value='11') 11
+                            option(value='12') 12
+                            option(value='13') 13
+                            option(value='14') 14
+                            option(value='15') 15
+                            option(value='16') 16
+                            option(value='17') 17
+                      button(type="submit").btn.btn--block Записаться!
+                      .form-info Оставляя заявку, вы принимаете 
+                        a(href="#!" target="_blank") условия соглашения
+          
+        // About
+        .section.about
+          .container
+
+            .bg-img
+              .bg-img__wrapper
+                img(src="./images/img-block5-left.png", alt="").bg-img__img.bg-img__img--about-left
+                img(src="./images/img-block2-right.png", alt="").bg-img__img.bg-img__img--about-right
+
+            .content__head.about__head
+              h2 Занимайтесь с профессиональным преподавателем 
+                span.span на удобной платформе
+
+            .about__content.--v2
+              .first
+                img(src="./tmp/about-img-desktop-2.png", alt="")
+              .last
+                .about__content-content
+                  ul
+                    li Для взрослых и детей с 5 лет
+                    li Занимайтесь онлайн из дома или офиса
+                    li Профессиональные преподаватели
+                    li Удобная платформа для занятий
+                    li Запись уроков (beta)
+                    li Доступные цены 
+                      span.--color &nbsp;от 650р. 
+
+            .about__faq.--v2
+              .about__faq-question В каком возрасте можно обучаться вокалу? 
+              .about__faq-answer
+                p Другой вопрос, что можно петь просто для собственного удовольствия, а можно начать заниматься профессионально, а это уже совершенно другие нагрузки на связки. И если делать это с самого раннего детства то только под руководством опытного педагога, который имеет большой опыт и практику работы именно с маленькими детьми. А также положительные отзывы и здоровые голоса учеников. 
+              .about__faq-question.--even У меня нет слуха и голоса, можно ли обучиться вокалу? 
+              .about__faq-answer
+                p А если Вам далеко уже за... то это не должно Вас смущать и если хочется петь - нужно это делать. заниматься под чутким руководством педагога, выполнять рекомендации и все обязательно получится. Ведь голос не стареет, если не подвергать его воздействию курения и алкоголя. Голос - это Ваша вечная молодость! 
+              .about__faq-question Мне не нравиться свой голос, можно ли это преодолеть? 
+              .about__faq-answer
+                p Все очень индивидуально. Если есть явный талант и сильный голос, то конечно, глупо ждать какого-то возраста, чтоб начать активно заниматься. Нужно петь, нужно учиться и продвигать себя. Добиваться поставленных целей. но делать это аккуратно, не перенапрягать связки. 
+              .about__faq-question.--even Сколько времени потребуется, чтобы поставить голос? 
+              .about__faq-answer
+                p Все очень индивидуально. Если есть явный талант и сильный голос, то конечно, глупо ждать какого-то возраста, чтоб начать активно заниматься. Нужно петь, нужно учиться и продвигать себя. Добиваться поставленных целей. но делать это аккуратно, не перенапрягать связки. 
+              .about__faq-question Эффективно ли заниматься онлайн? 
+              .about__faq-answer
+                p Все очень индивидуально. Если есть явный талант и сильный голос, то конечно, глупо ждать какого-то возраста, чтоб начать активно заниматься. Нужно петь, нужно учиться и продвигать себя. Добиваться поставленных целей. но делать это аккуратно, не перенапрягать связки.
+
+            +formOnce
+
+        // Cost
+        .section.cost
+          .container
+
+            .bg-img
+              .bg-img__wrapper
+                img(data-src="./images/img-block4-left.png", alt="").bg-img__img.bg-img__img--cost-left.lazyload
+
+            .content__head.cost__head
+              h2 Стоимость
+
+            ul.nav.nav-tabs#myTab(role='tablist')
+              li.nav-item(role='presentation')
+                a.nav-link.active#tab1-tab(data-toggle='tab' href='#tab1' role='tab' aria-controls='tab1' aria-selected='true')
+                  i.icon-rouble
+              li.nav-item(role='presentation')
+                a.nav-link#tab2-tab(data-toggle='tab' href='#tab2' role='tab' aria-controls='tab2' aria-selected='false')
+                  .icon-dollar
+            .tab-content
+              .tab-pane.fade.show.active#tab1(role='tabpanel' aria-labelledby='tab1-tab')
+                .cost__row
+                  .cost__block
+                    .cost__block-title
+                      b 32 
+                      | урока
+                    .cost__block-content
+                      div.div1 20 800
+                      del 25 280 
+                        i.icon-rouble
+                      div.div2 650/урок
+                      del 790
+                        i.icon-rouble
+                        | /урок
+                  .cost__block
+                    .cost__block-title
+                      b 16 
+                      | урока
+                    .cost__block-content
+                      div.div1 11 400
+                      del 12 640 
+                        i.icon-rouble
+                      div.div2 690/урок
+                      del 790
+                        i.icon-rouble
+                        | /урок
+                  .cost__block
+                    .cost__block-title
+                      b 8 
+                      | урока
+                    .cost__block-content
+                      div.div1 5 920
+                      del 6 320 
+                        i.icon-rouble
+                      div.div2 740/урок
+                      del 790
+                        i.icon-rouble
+                        | /урок
+                  .cost__block
+                    .cost__block-title
+                      b 4 
+                      | урока
+                    .cost__block-content
+                      div.div1 2 960
+                      del 3 100 
+                        i.icon-rouble
+                      div.div2 650/урок
+                      del 790
+                        i.icon-rouble
+                        | /урок
+
+              .tab-pane#tab2(role='tabpanel' aria-labelledby='tab2-tab')
+                .cost__row
+                  .cost__block
+                    .cost__block-title
+                      b 32 
+                      | урока
+                    .cost__block-content
+                      div.div1 20 800
+                      del 25 280 
+                        i.icon-dollar
+                      div.div2 650/урок 
+                      del 790
+                        i.icon-dollar
+                        | /урок 
+                  .cost__block
+                    .cost__block-title
+                      b 16 
+                      | урока
+                    .cost__block-content
+                      div.div1 11 400
+                      del 12 640 
+                        i.icon-dollar
+                      div.div2 690/урок 
+                      del 790
+                        i.icon-dollar
+                        | /урок 
+                  .cost__block
+                    .cost__block-title
+                      b 8 
+                      | урока
+                    .cost__block-content
+                      div.div1 5 920
+                      del 6 320 
+                        i.icon-dollar
+                      div.div2 740/урок 
+                      del 790
+                        i.icon-dollar
+                        | /урок 
+                  .cost__block
+                    .cost__block-title
+                      b 4 
+                      | урока
+                    .cost__block-content
+                      div.div1 2 960
+                      del 3 100 
+                        i.icon-dollar
+                      div.div2 650/урок 
+                      del 790
+                        i.icon-dollar
+                        | /урок 
+
+        // School
+        .section.school.--v2
+          .container
+
+            .bg-img
+              .bg-img__wrapper
+                img(data-src="./images/img-block1-left.png", alt="").bg-img__img.bg-img__img--school-right.lazyload
+
+            .content__head
+              h2 О школе
+
+            .school__untitle
+              p Sunday Rock Online — это онлайн-школа музыки. Теперь вы можете учиться у лучших преподавателей, не выходя из дома!
+            
+            .school__wrapper
+              .school__wrapper-content
+                .school__content
+                  ul
+                    li
+                      img(src="./tmp/icon-school-1.png", alt="")
+                      | Учим музыке с 2012 года
+                    li
+                      img(src="./tmp/icon-school-2.png", alt="")
+                      | С 2018 года преподаем онлайн
+                    li
+                      img(src="./tmp/icon-school-3.png", alt="")
+                      | Обучили больше 5 000 человек
+                    li
+                      img(src="./tmp/icon-school-4.png", alt="")
+                      | Нам доверяют ученики со всего мира
+                    li
+                      img(src="./tmp/icon-school-5.png", alt="")
+                      | Преподаватели с музыкальным образованием
+
+              .school__wrapper-img
+                .school__img
+                  img(data-src="./tmp/school-img-2.png", alt="").lazyload
+
+        // Directions
+        .section.directions
+          .container
+
+            .content__head.directions__head
+              h2 Направления
+
+            .directions__list
+              .directions__block
+                a(href="#!")
+                  span.directions__block-title Вокал
+                  img(src="./tmp/directions-img-1.png", alt="")
+              .directions__block.--guitar
+                a(href="#!")
+                  span.directions__block-title Гитара
+                  img(src="./tmp/directions-img-2.png", alt="")
+
+        // Comments
+        .section.comments
+          .container
+
+            .bg-img
+              .bg-img__wrapper
+                img(data-src="./images/img-block4-left.png", alt="").bg-img__img.bg-img__img--comments-left.lazyload
+
+            .content__head.comments__head
+              h2 Отзывы
+
+            .comments__wrapper
+              .swiper-container
+                .swiper-wrapper
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-1.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Петр Петров,
+                          br
+                          | Россия, Москва
+                          br
+                          | Срок обучения: 3 месяца
+                        p Очень понравились занятия по свадебным прическам! Так жаль что они закончились! Как преподаватель, Светлана очень понравилась и как человек тоже! Объясняет понятно, если что-то не ясно или не получается объясняет и показывает хоть на каждом занятии. Морально поддерживает, что для меня оказалось очень важно. Можно снимать фото и видео по ходу занятия, это очень помогает при отработке дома. Для видео причесок рассказывает лаконично и понятно, без лишней воды. На занятиях можно попробовать разные продукты и инструменты, соответственно не нужно перебирать разные марки и тратить деньги на ненужное. Я очень рада, что смогла попасть на индивидуальные занятия к Светлане, считаю это более эффективно чем групповые. Если решусь на обучение макияжу, то тоже пойду к Свете! 
+                        p Дата публикации: 01.02.2020
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-2.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Надежда, Израиль
+                        p Я очень довольна, что взяла курс и уроки вокала по Cкайпу. Это просто и очень удобно!
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-3.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Наталья, Россия
+                        p Во время уроков по скайпу я стала лучше понимать и слышать себя, голос начал раскрываться!
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-1.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Ольга, Россия
+                        p Занятия по Скайпу стали для меня отличным выходом, когда я переехала в другой город и не смогла продолжать заниматься очно. Преподаватель прекрасно видит тебя и слышит ошибки, поэтому может помочь и объяснить, что и как делать правильно.
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-2.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Надежда, Израиль
+                        p Я очень довольна, что взяла курс и уроки вокала по Cкайпу. Это просто и очень удобно!
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-3.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Наталья, Россия
+                        p Во время уроков по скайпу я стала лучше понимать и слышать себя, голос начал раскрываться!
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-1.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Ольга, Россия
+                        p Занятия по Скайпу стали для меня отличным выходом, когда я переехала в другой город и не смогла продолжать заниматься очно. Преподаватель прекрасно видит тебя и слышит ошибки, поэтому может помочь и объяснить, что и как делать правильно.
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-2.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Надежда, Израиль
+                        p Я очень довольна, что взяла курс и уроки вокала по Cкайпу. Это просто и очень удобно!
+                  .swiper-slide
+                    .comments__block
+                      img(data-src="./tmp/comment-img-3.png", alt="").lazyload
+                      .comments__block-content
+                        .comments__block-title Наталья, Россия
+                        p Во время уроков по скайпу я стала лучше понимать и слышать себя, голос начал раскрываться!
+              //  Add Arrows 
+              .swiper-button-next
+              .swiper-button-prev
+
+        // Learn
+        .section.learn
+          .container
+
+            .content__head.learn__head
+              h2 Начните учиться 
+                span.--bg прямо сейчас!
+
+            +formOnce
+
+      include ./_include/_footer
+      //- div(style="height: 1000px; background-color: #000")
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+
