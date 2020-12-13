@@ -862,7 +862,17 @@
       left: 32px;
       z-index: 2;
       line-height: 1;
-      -webkit-text-stroke: 1px #fbd21c;
+      padding-left: .2em;
+      // -webkit-text-stroke: 1px #fbd21c;
+      &::before {
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding-left: .2em;
+        -webkit-text-stroke: .2em #fbd21c;
+        z-index: -1;
+      }
     }
     img {
       display: block;
@@ -885,6 +895,9 @@
         color: #fff;
         left: auto;
         right: 30px;
+        &::before {
+          display: none;
+        }
       }
     }
     &:hover {

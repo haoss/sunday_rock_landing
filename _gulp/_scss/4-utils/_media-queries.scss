@@ -454,13 +454,10 @@
     &__wrapper {
       height: 62px;
       position: relative;
-      max-width: 300px;
       margin: 0 auto;
+      max-width: inherit;
       .is-scroll & {
         height: 40px;
-      }
-      .--v2 & {
-        max-width: inherit;
       }
     }
     &__btn {
@@ -470,45 +467,32 @@
       min-width: inherit;
     }
     &__whatsapp {
-      position: absolute;
-      right: 0;
       font-size: rem(11px);
-      top: 58px;
       &::before {
         width: 30px;
         height: 30px;
         background-size: 30px 30px;
       }
-      .--v2 & {
-        position: relative;
-        right: auto;
-        top: auto;
-      }
+      position: relative;
+      right: auto;
+      top: auto;
     }
   }
   .main-section {
-    padding-top: 120px;
+    padding-top: 65px;
     height: 1030px;
     &__untitle {
-      display: none;
-      .--v2 & {
-        display: block;
-        font-size: 18px;
-        line-height: 1.2;
-        margin-bottom: 10px;
-      }
+      display: block;
+      font-size: 18px;
+      line-height: 1.2;
+      margin-bottom: 10px;
     }
     &__head {
       text-align: center;
       h1, .h1 {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         .--color {
           color: #ffe745;
-        }
-      }
-      .--v2 & {
-        h1, .h1 {
-          margin-bottom: 10px;
         }
       }
     }
@@ -556,9 +540,6 @@
       .--v2 & {
         margin-top: 0;
       }
-    }
-    &.--v2 {
-      padding-top: 65px;
     }
   }
   .form-control, .label-checkbox {
@@ -800,26 +781,20 @@
   .header {
     &__logo {
       img {
-        .--v2 & {
-          width: 120px;
-        }
+        width: 120px;
       }
     }
     &__btn {
-      .--v2 & {
-        width: 55px;
-        margin-left: 15px;
-      }
+      width: 55px;
+      margin-left: 15px;
     }
     &__whatsapp {
-      .--v2 & {
-        font-size: 9px;
-        &::before {
-          width: 23px;
-          height: 23px;
-          background-size: contain;
-          margin-right: 5px;
-        }
+      font-size: 9px;
+      &::before {
+        width: 23px;
+        height: 23px;
+        background-size: contain;
+        margin-right: 5px;
       }
     }
   }
