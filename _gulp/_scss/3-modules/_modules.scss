@@ -834,6 +834,31 @@
       }
     }
   }
+  &__certificate {
+    text-align: center;
+    margin-top: 140px;
+    &-block {
+      display: inline-flex;
+      align-items: center;
+      font-size: 45px;
+      text-decoration: none;
+      text-align: left;
+      line-height: 1.2;
+      img {
+        margin-right: 60px;
+        margin-top: -15px;
+      }
+      b {
+        display: block;
+      }
+      .--color {
+        color: #df1c1c;
+      }
+      &:hover {
+        color: #df1c1c;
+      }
+    }
+  }
 }
 
 .directions {
