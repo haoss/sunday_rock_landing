@@ -81,6 +81,7 @@ $(document).on('ready', function(){
   wordWrap();
   showAge();
   faq();
+  directionOne();
 
   // Chrome Smooth Scroll
   try {
@@ -166,5 +167,13 @@ function faq() {
     } else {
       _this.addClass('is-active')
     }
+  });
+}
+
+function directionOne() {
+  var btn = $('.direction__one-btn button');
+  btn.on('click', function(){
+    btn.removeClass('active');
+    $(this).addClass('active');
   });
 }

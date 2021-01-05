@@ -1,0 +1,260 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Главная' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Главная 3' + ' - Sunday Rock online' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body
+    .base.--v3
+
+      // Preloader
+      include ./_include/_preloader
+
+      include ./_include/_header-v3
+
+      // Content
+      main.content
+
+        // Bg-top
+        .container
+          .bg-img
+            .bg-img__wrapper
+              img(data-src="./images/img-block1-left.png", alt="").bg-img__img.bg-img__img--top-left.lazyload
+              img(data-src="./images/img-block1-right.png", alt="").bg-img__img.bg-img__img--top-right.lazyload
+
+        // About
+        .section.about.--v3
+          .container
+
+            .about__gift
+              img(src="./tmp/gift-desktop.png", alt="")
+              img(src="./tmp/gift-mobile.png", alt="")
+
+            .content__head.about__head
+              h2 
+                span.--color Подарочный сертификат 
+                | на занятия музыкой с преподавателем онлайн
+
+            .about__content
+              .first
+                img(src="./tmp/about-img-crown.png", alt="")
+                img(src="./tmp/about-img-desktop-2.png", alt="")
+                img(src="./tmp/about-img-mobile-2.png", alt="")
+              .last
+                .about__content-content
+                  ul
+                    li Для взрослых и детей с 5 лет
+                    li Занимайтесь онлайн из дома или офиса
+                    li Профессиональные преподаватели
+                    li Удобная платформа для занятий
+                    li Запись уроков (beta)
+                    li Доступные цены 
+                      span.--color &nbsp;от 650р. 
+
+        // Direction
+        .section.direction
+          .container
+            .direction__wrapper
+              .direction__one
+                .direction__one-head
+                  img(src="./tmp/img-direction-1.png", alt="")
+                  div Выберите 
+                    br
+                    | направление
+                .direction__one-btn
+                  button(type="button").active Вокал
+                  button(type="button") Гитара
+                  button(type="button") На выбор ученика
+
+              .direction__two
+                .direction__two-head
+                  img(src="./tmp/img-direction-2.png", alt="")
+                  div Выберите 
+                    br 
+                    | количество уроков
+
+                .cost.--v3
+                  ul.nav.nav-tabs#myTab(role='tablist')
+                    li.nav-item(role='presentation')
+                      a.nav-link.active#tab1-tab(data-toggle='tab' href='#tab1' role='tab' aria-controls='tab1' aria-selected='true')
+                        i.icon-rouble
+                    li.nav-item(role='presentation')
+                      a.nav-link#tab2-tab(data-toggle='tab' href='#tab2' role='tab' aria-controls='tab2' aria-selected='false')
+                        .icon-dollar
+                  .tab-content
+                    .tab-pane.fade.show.active#tab1(role='tabpanel' aria-labelledby='tab1-tab')
+                      .cost__row
+                        .cost__block
+                          .cost__block-title
+                            b 64 
+                            | урока
+                          .cost__block-content
+                            div.div1 23 000 
+                              i.icon-rouble
+                            div.div2 700 
+                              i.icon-rouble 
+                              | /урок
+                        .cost__block
+                          .cost__block-title
+                            b 32 
+                            | урока
+                          .cost__block-content
+                            div.div1 17 000 
+                              i.icon-rouble
+                            div.div2 700 
+                              i.icon-rouble 
+                              | /урок
+                        .cost__block
+                          .cost__block-title
+                            b 24 
+                            | урока
+                          .cost__block-content
+                            div.div1 8 300 
+                              i.icon-rouble
+                            div.div2 700 
+                              i.icon-rouble 
+                              | /урок
+                        .cost__block
+                          .cost__block-title
+                            b 12 
+                            | урока
+                          .cost__block-content
+                            div.div1 7 000 
+                              i.icon-rouble
+                            div.div2 700 
+                              i.icon-rouble 
+                              | /урок
+                        .cost__block
+                          .cost__block-title
+                            b 8 
+                            | урока
+                          .cost__block-content
+                            div.div1 5 000 
+                              i.icon-rouble
+                            div.div2 700 
+                              i.icon-rouble 
+                              | /урок
+                        .cost__block
+                          .cost__block-title
+                            b 4 
+                            | урока
+                          .cost__block-content
+                            div.div1 2 300 
+                              i.icon-rouble
+                            div.div2 700 
+                              i.icon-rouble 
+                              | /урок
+
+                    .tab-pane#tab2(role='tabpanel' aria-labelledby='tab2-tab')
+                      .cost__row
+                        .cost__block
+                          .cost__block-title
+                            b 64 
+                            | урока
+                          .cost__block-content
+                            div.div1 23 000 $
+                            div.div2 700 $ /урок
+                        .cost__block
+                          .cost__block-title
+                            b 32 
+                            | урока
+                          .cost__block-content
+                            div.div1 17 000 $
+                            div.div2 700 $ /урок
+                        .cost__block
+                          .cost__block-title
+                            b 24 
+                            | урока
+                          .cost__block-content
+                            div.div1 8 300 $
+                            div.div2 700 $ /урок
+                        .cost__block
+                          .cost__block-title
+                            b 12 
+                            | урока
+                          .cost__block-content
+                            div.div1 7 000 $
+                            div.div2 700 $ /урок
+                        .cost__block
+                          .cost__block-title
+                            b 8 
+                            | урока
+                          .cost__block-content
+                            div.div1 5 000 $
+                            div.div2 700 $ /урок
+                        .cost__block
+                          .cost__block-title
+                            b 4 
+                            | урока
+                          .cost__block-content
+                            div.div1 2 300 $
+                            div.div2 700 $ /урок
+
+              .direction__three
+                .direction__three-head
+                  img(src="./tmp/img-direction-3.png", alt="")
+                  div Выберите 
+                    br 
+                    | данные плательщика
+
+                .direction__form
+                  form(action="" autocomplete="off")
+                    .direction__form-wrapper
+                      fieldset
+                        .form-group
+                          label Имя:
+                          input(type="text" name="name" placeholder="Иван Иванов" required value="").form-control
+                          .input-shadow
+                        .form-group
+                          label Телефон:
+                          input(type="text" name="name" placeholder="7 909 0090707" required value="").form-control
+                          .input-shadow
+                          span.info На всякий случай, если что-то пойдет не так :)
+                        .form-group
+                          label Email:
+                          input(type="text" name="name" placeholder="hello_loh@gmail.com" required value="").form-control
+                          .input-shadow
+                          span.info Электронный подарочный сертификат.
+                            br
+                            | Вы получите на указанную  электронную почту. 
+                        .clear20
+                    button.direction__form-btn(type="submit") Оплатить 8390 руб.
+                    .direction__form-info Нажимая кнопку «Оплатить», я соглашаюсь с 
+                      a(href="#!") Правилами
+                      | , 
+                      a(href="#!") Офертой
+                      |  и 
+                      a(href="#!") Политикой по персональным данным 
+
+        // How to present
+        .section.how-present
+          .container
+
+            .how-present__wrapper
+              .how-present__head
+                div Как подарить сертификат
+              .how-present__body
+                .div1 
+                  img(src="./tmp/certificate.png", alt="" width="360")
+                .div2
+                  ul.how-present__list
+                    li
+                      img(src="./tmp/img-direction-1.png", alt="" width="38")
+                      div Вы получите подарочный сертификат на свой емейл (пдф и ссылка)
+                    li
+                      img(src="./tmp/img-direction-2.png", alt="" width="38")
+                      div Отправьте ссылку или распечатайте пдф и вручите другу
+                    li
+                      img(src="./tmp/img-direction-3.png", alt="" width="38")
+                      div После получения, ваш друг активирует сертификат самостоятельно по инструкции
+
+      include ./_include/_footer
+      //- div(style="height: 1000px; background-color: #000")
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+

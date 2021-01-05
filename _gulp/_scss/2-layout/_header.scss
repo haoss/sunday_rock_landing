@@ -63,4 +63,10 @@
       display: block;
     }
   }
+  &.--v3 {
+    background: url('../images/header.png') bottom center repeat-x;
+    height: 127px;
+    margin-top: 0;
+    padding-top: 10px;
+  }
 }
