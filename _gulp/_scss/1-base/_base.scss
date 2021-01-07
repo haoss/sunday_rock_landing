@@ -34,7 +34,7 @@ body {
   background: #fafafa;
   &.--v3 {
     background-image: url('../images/bg-v3.png');
-    background-position: top center;
+    background-position: center -270px;
     background-repeat: no-repeat;
     background-color: $color-white;
   }
