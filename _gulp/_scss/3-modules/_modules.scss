@@ -902,8 +902,8 @@
     }
     &.j-cost-block {
       .cost__block-content {
-        border-color: #e5e5e5;
-        background: #e5e5e5;
+        border-color: transparent;
+        background: linear-gradient(to bottom, #eeeeee, #e8e8e8);
       }
       &.active {
         .cost__block-content {
