@@ -268,6 +268,9 @@
           padding-left: 0;
         }
       }
+      .--v3 & {
+        padding-bottom: 0;
+      }
     }
     &__gift {
       margin-bottom: 80px;
@@ -713,13 +716,13 @@
       .--v3 & {
         h2, .h2 {
           font-size: 25px;
-          margin-bottom: 175px;
+          margin-bottom: 130px;
         }
       }
     }
     &.--v3 {
       padding-top: 105px;
-      padding-bottom: 90px;
+      padding-bottom: 175px;
     }
   }
   .bg-img {

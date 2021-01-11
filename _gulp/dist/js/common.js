@@ -82,6 +82,7 @@ $(document).on('ready', function(){
   showAge();
   faq();
   directionOne();
+  costActive();
 
   // Chrome Smooth Scroll
   try {
@@ -174,6 +175,14 @@ function directionOne() {
   var btn = $('.direction__one-btn button');
   btn.on('click', function(){
     btn.removeClass('active');
+    $(this).addClass('active');
+  });
+}
+
+function costActive() {
+  var block = $('.j-cost-block');
+  block.on('click', function(){
+    block.removeClass('active');
     $(this).addClass('active');
   });
 }

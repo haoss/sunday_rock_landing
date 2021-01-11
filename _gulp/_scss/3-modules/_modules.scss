@@ -176,7 +176,7 @@
       margin-right: auto;
       .h2, h2 {
         font-size: 58px;
-        margin-bottom: 200px;
+        margin-bottom: 110px;
       }
       .--color {
         color: #e11b1b;
@@ -332,6 +332,7 @@
   }
   &.--v3 {
     padding-top: 200px;
+    padding-bottom: 200px;
     background: transparent;
   }
 }
@@ -899,6 +900,18 @@
         }
       }
     }
+    &.j-cost-block {
+      .cost__block-content {
+        border-color: #e5e5e5;
+        background: #e5e5e5;
+      }
+      &.active {
+        .cost__block-content {
+          border-color: #fffa9a;
+          background: linear-gradient(to bottom, #ffea75, #ffd353);
+        }
+      }
+    }
   }
   &__certificate {
     text-align: center;
@@ -1050,7 +1063,7 @@
     }
   }
   &__two {
-    margin-bottom: 250px;
+    margin-bottom: 200px;
     &-head {
       font-size: 44px;
       display: flex;
