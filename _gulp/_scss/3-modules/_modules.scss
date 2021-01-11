@@ -903,7 +903,7 @@
     &.j-cost-block {
       .cost__block-content {
         border-color: transparent;
-        background: linear-gradient(to bottom, #eeeeee, #e8e8e8);
+        background: linear-gradient(to bottom, rgba(#d8d8d8, .5), rgba(#e8e8e8,.5));
       }
       &.active {
         .cost__block-content {
