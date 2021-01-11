@@ -163,6 +163,7 @@
     }
     &.--v3 {
       height: 82px;
+      padding-top: 10px;
     }
   }
   .h1, h1 {
@@ -554,6 +555,9 @@
       .is-scroll & {
         height: 40px;
       }
+      .--v3 & {
+        height: 50px;
+      }
     }
     &__btn {
       width: 79px;
@@ -573,7 +577,8 @@
       top: auto;
     }
     &.--v3 {
-      height: 80px;
+      height: 50px;
+      padding-top: 0;
     }
   }
   .main-section {
@@ -693,6 +698,7 @@
       }
     }
     &__gift {
+      margin-bottom: 60px;
       img {
         &[src*="desktop"] {
           display: none;
@@ -707,11 +713,13 @@
       .--v3 & {
         h2, .h2 {
           font-size: 25px;
+          margin-bottom: 175px;
         }
       }
     }
     &.--v3 {
-      padding-top: 85px;
+      padding-top: 105px;
+      padding-bottom: 90px;
     }
   }
   .bg-img {
