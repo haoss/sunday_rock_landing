@@ -83,6 +83,7 @@ $(document).on('ready', function(){
   faq();
   directionOne();
   costActive();
+  formOrder();
 
   // Chrome Smooth Scroll
   try {
@@ -184,5 +185,21 @@ function costActive() {
   block.on('click', function(){
     block.removeClass('active');
     $(this).addClass('active');
+  });
+}
+
+function formOrder() {
+  var input1 = $('input[name="form-direction"]');
+  var input2 = $('input[name="form-number-lessons"]');
+  var btn1 = $('.direction__one-btn button');
+  var btn2 = $('.j-cost-block');
+
+  btn1.on('click', function(){
+    var value = $(this).data('direction');
+    input1.val(value);
+  });
+  btn2.on('click', function(){
+    var value = $(this).data('number');
+    input2.val(value);
   });
 }
