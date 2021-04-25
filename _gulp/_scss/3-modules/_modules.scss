@@ -49,6 +49,7 @@
     order: 1;
     box-shadow: -7px -7px 0 #ffa21e;
     color: $primary-color;
+    position: relative;
     &-content {
       font-size: rem(18px);
       font-weight: 500;
@@ -1254,5 +1255,23 @@
     &:active {
       top: 2px;
     }
+  }
+}
+.gift {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  left: 50%;
+  margin-top: -27px;
+  @media (max-width: 991px) {
+    width: 270px;
+    margin-top: -20px;
+  }
+  @media (max-width: 767px) {
+    width: 330px;
+    margin-top: -25px;
+  }
+  @media (max-width: 480px) {
+    width: 280px;
   }
 }
